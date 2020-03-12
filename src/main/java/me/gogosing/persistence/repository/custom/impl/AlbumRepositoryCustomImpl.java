@@ -6,13 +6,14 @@ import me.gogosing.persistence.entity.QAlbumLocaleEntity;
 import me.gogosing.persistence.entity.QSongEntity;
 import me.gogosing.persistence.repository.custom.AlbumRepositoryCustom;
 import com.querydsl.jpa.JPQLQuery;
-import me.gogosing.consts.ApplicationConstants;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 
 import java.util.List;
+
+import static me.gogosing.consts.ApplicationConstants.ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE;
 
 /**
  * Created by JinBum Jeong on 2020/03/12.
@@ -36,7 +37,7 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
                 .where(
                         albumEntity.deleted.isFalse(),
                         albumEntity.title.containsIgnoreCase(title),
-                        albumLocaleEntity.localeCode.in(ApplicationConstants.ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE, locale)
+                        albumLocaleEntity.localeCode.in(ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE, locale)
                 );
 
         return query.orderBy(albumEntity.title.asc()).fetch();
@@ -55,7 +56,7 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
                 .where(
                         albumEntity.deleted.isFalse(),
                         albumEntity.id.in(albums),
-                        albumLocaleEntity.localeCode.in(ApplicationConstants.ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE, locale)
+                        albumLocaleEntity.localeCode.in(ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE, locale)
                 );
 
         return query.orderBy(albumEntity.title.asc()).fetch();
@@ -73,7 +74,7 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
                 .fetchJoin()
                 .where(
                         albumEntity.deleted.isFalse(),
-                        albumLocaleEntity.localeCode.in(ApplicationConstants.ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE, locale)
+                        albumLocaleEntity.localeCode.in(ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE, locale)
                 );
 
         List<AlbumEntity> results = query
