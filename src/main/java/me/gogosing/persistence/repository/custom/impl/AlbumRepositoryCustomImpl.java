@@ -82,8 +82,7 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
                 .orderBy(albumEntity.createOn.desc())
                 .fetch();
 
-        long total = 0;
-
+        long total = 0L;
         if (!results.isEmpty()) {
             total = query.select(albumEntity).distinct().fetchCount();
         }
