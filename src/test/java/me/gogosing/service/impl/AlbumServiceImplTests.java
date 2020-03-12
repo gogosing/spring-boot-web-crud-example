@@ -21,12 +21,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.ZonedDateTime;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static me.gogosing.consts.ApplicationConstants.DEFAULT_PAGE_LIMIT;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -85,13 +85,13 @@ public class AlbumServiceImplTests {
         songEntity2.setDeleted(false);
         songEntity2.setCreateOn(ZonedDateTime.now());
 
-        albumEntity1.setSongEntities(Collections.singletonList(songEntity1));
-        albumEntity2.setSongEntities(Collections.singletonList(songEntity2));
+        albumEntity1.setSongEntities(Set.of(songEntity1));
+        albumEntity2.setSongEntities(Set.of(songEntity2));
 
         ArgumentCaptor<String> localeArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Pageable> pageableArgumentCaptor = ArgumentCaptor.forClass(Pageable.class);
 
-        List<AlbumEntity> expectedContentResult = Arrays.asList(albumEntity1, albumEntity2).stream()
+        List<AlbumEntity> expectedContentResult = Stream.of(albumEntity1, albumEntity2)
                 .sorted(Comparator.comparing(AlbumEntity::getCreateOn).reversed())
                 .collect(Collectors.toList());
 

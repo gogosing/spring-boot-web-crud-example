@@ -12,7 +12,9 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import java.time.ZonedDateTime;
 import java.util.Collections;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 사용자 플레이리스트 Entity.
@@ -61,7 +63,7 @@ public class PlaylistEntity {
      * 플레이리스트 컨텐츠 목록.
      */
     @OneToMany(mappedBy = "playlistEntity", fetch = FetchType.LAZY, cascade = {CascadeType.REMOVE})
-    private List<PlaylistInventoryEntity> playlistInventoryEntities = Collections.emptyList();
+    private Set<PlaylistInventoryEntity> playlistInventoryEntities = new LinkedHashSet<>();
 
     public Long getKey() {
         return key;
@@ -103,11 +105,11 @@ public class PlaylistEntity {
         this.createOn = createOn;
     }
 
-    public List<PlaylistInventoryEntity> getPlaylistInventoryEntities() {
+    public Set<PlaylistInventoryEntity> getPlaylistInventoryEntities() {
         return playlistInventoryEntities;
     }
 
-    public void setPlaylistInventoryEntities(List<PlaylistInventoryEntity> playlistInventoryEntities) {
+    public void setPlaylistInventoryEntities(Set<PlaylistInventoryEntity> playlistInventoryEntities) {
         this.playlistInventoryEntities = playlistInventoryEntities;
     }
 }

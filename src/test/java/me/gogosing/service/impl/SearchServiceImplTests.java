@@ -16,8 +16,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.ZonedDateTime;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
@@ -75,8 +75,8 @@ public class SearchServiceImplTests {
         songEntity2.setDeleted(false);
         songEntity2.setCreateOn(ZonedDateTime.now());
 
-        albumEntity1.setSongEntities(Collections.singletonList(songEntity1));
-        albumEntity2.setSongEntities(Collections.singletonList(songEntity2));
+        albumEntity1.setSongEntities(Set.of(songEntity1));
+        albumEntity2.setSongEntities(Set.of(songEntity2));
 
         ArgumentCaptor<String> titleArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<String> localeArgumentCaptor = ArgumentCaptor.forClass(String.class);

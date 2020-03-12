@@ -3,6 +3,7 @@ package me.gogosing.persistence.repository.custom.impl;
 import me.gogosing.persistence.entity.AlbumEntity;
 import me.gogosing.persistence.entity.QAlbumEntity;
 import me.gogosing.persistence.entity.QAlbumLocaleEntity;
+import me.gogosing.persistence.entity.QSongEntity;
 import me.gogosing.persistence.repository.custom.AlbumRepositoryCustom;
 import com.querydsl.jpa.JPQLQuery;
 import me.gogosing.consts.ApplicationConstants;
@@ -26,9 +27,11 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
     public List<AlbumEntity> getAlbumEntities(String title, String locale) {
         QAlbumEntity albumEntity = QAlbumEntity.albumEntity;
         QAlbumLocaleEntity albumLocaleEntity = QAlbumLocaleEntity.albumLocaleEntity;
+        QSongEntity songEntity = QSongEntity.songEntity;
 
         JPQLQuery<AlbumEntity> query = from(albumEntity)
                 .leftJoin(albumEntity.albumLocaleEntities, albumLocaleEntity)
+                .leftJoin(albumEntity.songEntities, songEntity)
                 .fetchJoin()
                 .where(
                         albumEntity.deleted.isFalse(),
@@ -43,9 +46,11 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
     public List<AlbumEntity> getAlbumEntities(String locale, List<String> albums) {
         QAlbumEntity albumEntity = QAlbumEntity.albumEntity;
         QAlbumLocaleEntity albumLocaleEntity = QAlbumLocaleEntity.albumLocaleEntity;
+        QSongEntity songEntity = QSongEntity.songEntity;
 
         JPQLQuery<AlbumEntity> query = from(albumEntity)
                 .leftJoin(albumEntity.albumLocaleEntities, albumLocaleEntity)
+                .leftJoin(albumEntity.songEntities, songEntity)
                 .fetchJoin()
                 .where(
                         albumEntity.deleted.isFalse(),
@@ -60,9 +65,11 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
     public Page<AlbumEntity> getPaginatedAlbumEntities(String locale, Pageable pageable) {
         QAlbumEntity albumEntity = QAlbumEntity.albumEntity;
         QAlbumLocaleEntity albumLocaleEntity = QAlbumLocaleEntity.albumLocaleEntity;
+        QSongEntity songEntity = QSongEntity.songEntity;
 
         JPQLQuery<AlbumEntity> query = from(albumEntity)
                 .leftJoin(albumEntity.albumLocaleEntities, albumLocaleEntity)
+                .leftJoin(albumEntity.songEntities, songEntity)
                 .fetchJoin()
                 .where(
                         albumEntity.deleted.isFalse(),
@@ -75,6 +82,12 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
                 .orderBy(albumEntity.createOn.desc())
                 .fetch();
 
-        return new PageImpl(results, pageable, query.select(albumEntity).distinct().fetchCount());
+        long total = 0;
+
+        if (!results.isEmpty()) {
+            total = query.select(albumEntity).distinct().fetchCount();
+        }
+
+        return new PageImpl(results, pageable, total);
     }
 }

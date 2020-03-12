@@ -20,11 +20,13 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.ZonedDateTime;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -119,7 +121,7 @@ public class PlaylistInventoryServiceImplTests {
         playlistInventoryEntity2.setCreateOn(ZonedDateTime.now().plusDays(1));
 
         playlistEntity.setPlaylistInventoryEntities(
-                Arrays.asList(playlistInventoryEntity1, playlistInventoryEntity2)
+                Set.of(playlistInventoryEntity1, playlistInventoryEntity2)
         );
 
         ArgumentCaptor<String> userIdArgumentCaptor = ArgumentCaptor.forClass(String.class);
@@ -204,8 +206,8 @@ public class PlaylistInventoryServiceImplTests {
         songEntity3.setDeleted(false);
         songEntity3.setCreateOn(ZonedDateTime.now());
 
-        albumEntity1.setSongEntities(Arrays.asList(songEntity1, songEntity2));
-        albumEntity2.setSongEntities(Collections.singletonList(songEntity3));
+        albumEntity1.setSongEntities(Set.of(songEntity1, songEntity2));
+        albumEntity2.setSongEntities(Set.of(songEntity3));
 
         ArgumentCaptor<String> localeArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<List<String>> songsArgumentCaptor = ArgumentCaptor.forClass(List.class);
@@ -330,8 +332,8 @@ public class PlaylistInventoryServiceImplTests {
         songEntity3.setDeleted(false);
         songEntity3.setCreateOn(ZonedDateTime.now());
 
-        albumEntity1.setSongEntities(Arrays.asList(songEntity1, songEntity2));
-        albumEntity2.setSongEntities(Collections.singletonList(songEntity3));
+        albumEntity1.setSongEntities(Set.of(songEntity1, songEntity2));
+        albumEntity2.setSongEntities(Set.of(songEntity3));
 
         PlaylistInventoryEntity playlistInventoryEntity1 = new PlaylistInventoryEntity();
         playlistInventoryEntity1.setId(expectedPlaylistInventoryId1);
@@ -351,7 +353,7 @@ public class PlaylistInventoryServiceImplTests {
         playlistInventoryEntity3.setSongEntity(songEntity3);
         playlistInventoryEntity3.setCreateOn(ZonedDateTime.now());
 
-        List<PlaylistInventoryEntity> inventoryEntities = Arrays.asList(
+        Set<PlaylistInventoryEntity> inventoryEntities = Set.of(
                 playlistInventoryEntity1, playlistInventoryEntity2, playlistInventoryEntity3
         );
 
@@ -367,7 +369,7 @@ public class PlaylistInventoryServiceImplTests {
                 playlistIdSpecArgumentCaptor.capture(),
                 inventoryIdSpecArgumentCaptor.capture()
             )
-        ).thenReturn(inventoryEntities);
+        ).thenReturn(new ArrayList<>(inventoryEntities));
 
         doNothing()
             .when(playlistInventoryRepository).deleteAll(inventoryEntities);

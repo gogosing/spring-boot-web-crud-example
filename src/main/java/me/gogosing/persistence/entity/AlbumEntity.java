@@ -11,7 +11,9 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import java.time.ZonedDateTime;
 import java.util.Collections;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 앨범 정보 Entity.
@@ -60,13 +62,13 @@ public class AlbumEntity {
      * 앨범 소속 곡 목록.
      */
     @OneToMany(mappedBy = "albumEntity", fetch = FetchType.LAZY)
-    private List<SongEntity> songEntities = Collections.emptyList();
+    private Set<SongEntity> songEntities = new LinkedHashSet<>();
 
     /**
      * 앨범 서비스 가능 지역 코드 목록.
      */
     @OneToMany(mappedBy = "albumEntity", fetch = FetchType.LAZY)
-    private List<AlbumLocaleEntity> albumLocaleEntities = Collections.emptyList();
+    private Set<AlbumLocaleEntity> albumLocaleEntities = new LinkedHashSet<>();
 
     public Long getKey() {
         return key;
@@ -108,19 +110,19 @@ public class AlbumEntity {
         this.createOn = createOn;
     }
 
-    public List<SongEntity> getSongEntities() {
+    public Set<SongEntity> getSongEntities() {
         return songEntities;
     }
 
-    public void setSongEntities(List<SongEntity> songEntities) {
+    public void setSongEntities(Set<SongEntity> songEntities) {
         this.songEntities = songEntities;
     }
 
-    public List<AlbumLocaleEntity> getAlbumLocaleEntities() {
+    public Set<AlbumLocaleEntity> getAlbumLocaleEntities() {
         return albumLocaleEntities;
     }
 
-    public void setAlbumLocaleEntities(List<AlbumLocaleEntity> albumLocaleEntities) {
+    public void setAlbumLocaleEntities(Set<AlbumLocaleEntity> albumLocaleEntities) {
         this.albumLocaleEntities = albumLocaleEntities;
     }
 }

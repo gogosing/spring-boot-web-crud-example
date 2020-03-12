@@ -31,9 +31,7 @@ public class PlaylistInventoryRepositoryCustomImpl
 
         return from(playlistInventoryEntity)
                 .innerJoin(playlistInventoryEntity.playlistEntity, playlistEntity)
-                .fetchJoin()
                 .innerJoin(playlistInventoryEntity.songEntity, songEntity)
-                .fetchJoin()
                 .where(
                         playlistInventoryEntity.id.in(inventoryId),
                         playlistEntity.id.eq(playlistId),

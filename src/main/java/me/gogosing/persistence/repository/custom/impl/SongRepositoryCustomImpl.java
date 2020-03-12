@@ -30,7 +30,6 @@ public class SongRepositoryCustomImpl extends QuerydslRepositorySupport implemen
                 .innerJoin(songEntity.albumEntity, albumEntity)
                 .fetchJoin()
                 .leftJoin(albumEntity.albumLocaleEntities, albumLocaleEntity)
-                .fetchJoin()
                 .where(
                         songEntity.deleted.isFalse(),
                         albumEntity.deleted.isFalse(),
@@ -49,9 +48,7 @@ public class SongRepositoryCustomImpl extends QuerydslRepositorySupport implemen
 
         JPQLQuery<SongEntity> query = from(songEntity)
                 .innerJoin(songEntity.albumEntity, albumEntity)
-                .fetchJoin()
                 .leftJoin(albumEntity.albumLocaleEntities, albumLocaleEntity)
-                .fetchJoin()
                 .where(
                         songEntity.deleted.isFalse(),
                         albumEntity.deleted.isFalse(),

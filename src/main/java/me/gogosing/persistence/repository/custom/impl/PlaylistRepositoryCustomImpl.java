@@ -61,9 +61,7 @@ public class PlaylistRepositoryCustomImpl extends QuerydslRepositorySupport impl
         return Optional.ofNullable(
                 from(playlistEntity)
                 .leftJoin(playlistEntity.playlistInventoryEntities, playlistInventoryEntity)
-                .fetchJoin()
                 .innerJoin(playlistInventoryEntity.songEntity, songEntity)
-                .fetchJoin()
                 .where(
                         playlistEntity.id.eq(playlistId),
                         playlistEntity.createBy.eq(userId)
