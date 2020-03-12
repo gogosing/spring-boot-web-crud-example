@@ -19,7 +19,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -83,7 +85,7 @@ public class PlaylistInventoryServiceImpl implements PlaylistInventoryService {
     ) {
         final PlaylistEntity playlistEntity = getPlaylistEntity(userId, id);
 
-        final List<SongEntity> songEntities = new ArrayList<>();
+        final Set<SongEntity> songEntities = new LinkedHashSet<>();
 
         songEntities.addAll(
                 songRepository.getSongEntities(locale, inventoryRequest.getSongs())

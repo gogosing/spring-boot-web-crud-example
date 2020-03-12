@@ -26,12 +26,6 @@ public class Playlist {
     private String title;
 
     /**
-     * 플레이리스트 수록곡 목록.
-     */
-    @JsonProperty(value = "songs")
-    private List<Song> songs;
-
-    /**
      * 플레이리스트 생성일시.
      */
     @JsonProperty(value = "createOn")
@@ -51,14 +45,6 @@ public class Playlist {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public List<Song> getSongs() {
-        return songs;
-    }
-
-    public void setSongs(List<Song> songs) {
-        this.songs = songs;
     }
 
     public ZonedDateTime getCreateOn() {

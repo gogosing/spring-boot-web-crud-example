@@ -3,9 +3,7 @@ package me.gogosing.service.impl;
 import me.gogosing.component.GenerateIdComponent;
 import me.gogosing.exception.NotFoundException;
 import me.gogosing.model.Playlist;
-import me.gogosing.model.Song;
 import me.gogosing.persistence.entity.PlaylistEntity;
-import me.gogosing.persistence.entity.SongEntity;
 import me.gogosing.persistence.repository.PlaylistRepository;
 import me.gogosing.service.PlaylistService;
 import org.springframework.stereotype.Service;
@@ -68,15 +66,6 @@ public class PlaylistServiceImpl implements PlaylistService {
             final Playlist playlist = new Playlist();
             playlist.setId(playlistEntity.getId());
             playlist.setTitle(playlistEntity.getTitle());
-            playlist.setSongs(playlistEntity.getPlaylistInventoryEntities().stream().map(inventoryEntity -> {
-                final SongEntity songEntity = inventoryEntity.getSongEntity();
-                final Song song = new Song();
-                song.setId(songEntity.getId());
-                song.setTitle(songEntity.getTitle());
-                song.setTrack(songEntity.getTrackNo());
-                song.setLength(songEntity.getLength());
-                return song;
-            }).collect(Collectors.toList()));
             playlist.setCreateOn(playlistEntity.getCreateOn());
             return playlist;
         }).collect(Collectors.toList());
