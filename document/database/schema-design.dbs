@@ -183,11 +183,11 @@ FROM
 		</script>
 	</layout>
 	<layout name="design" id="Layout_41d07a" show_relation="columns" >
-		<comment><![CDATA[database]]></comment>
-		<entity schema="my_database" name="SONG" color="C1D8EE" x="272" y="48" />
-		<entity schema="my_database" name="ALBUM" color="C1D8EE" x="48" y="48" />
-		<entity schema="my_database" name="PL_INVENTORY" color="C1D8EE" x="352" y="304" />
-		<entity schema="my_database" name="ALB_LOCALE" color="C1D8EE" x="48" y="304" />
+		<comment><![CDATA[schema-design]]></comment>
 		<entity schema="my_database" name="PLAYLIST" color="C1D8EE" x="464" y="48" />
+		<entity schema="my_database" name="SONG" color="C1D8EE" x="272" y="48" />
+		<entity schema="my_database" name="PL_INVENTORY" color="C1D8EE" x="352" y="304" />
+		<entity schema="my_database" name="ALBUM" color="C1D8EE" x="48" y="48" />
+		<entity schema="my_database" name="ALB_LOCALE" color="C1D8EE" x="48" y="304" />
 	</layout>
 </project>

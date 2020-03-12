@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang='en-us' xmlns='http://www.w3.org/1999/xhtml' >
 <head>
-<title>database</title>
+<title>schema&#45;design</title>
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
 <link rel='shortcut icon' href='https://dbschema.com/images/favicon.ico'>
@@ -239,7 +239,7 @@ th {
 <!-- == Legend == -->
 <g transform='translate(10,10)'>
   <rect x='10' y='10' width='230' height='56' rx='6' ry='6' style='fill:url(#legendGradient);filter:url(#shadow);'/> 
-  <text x='20' y='25' class='legendTitle' >database</text> 
+  <text x='20' y='25' class='legendTitle' >schema-design</text> 
   <text x='20' y='39' class='legendSubTitle'><tspan>Table comments as mouse-over tooltips.</tspan></text> 
   <a xlink:href='https://dbschema.com'><text x='20' y='53' class='legendSubTitle'><tspan>DbSchema.com</tspan></text></a> 
 </g>
@@ -277,11 +277,34 @@ ALB_LOCALE ref ALBUM ( ALBUM_KEY )</title>
 <path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 64,288L 64,176' ><title>Fk IDX_ALB_LOCALE_FK_ALBUM_KEY
 ALB_LOCALE ref ALBUM ( ALBUM_KEY )</title></path>
 <text x='67' y='283' transform='rotate(270 67,283)' class='relName'>ALBUM_KEY</text>
+<!-- == Table 'PLAYLIST' == -->
+<rect class='entity' style='stroke:#1E578F' x='464' y='40' width='128' height='128' rx='8' ry='8' />
+<path d='M 464 68 L 464 48 Q 464 40 472 40 L 584 40 Q 592 40 592 48 L 592 68 L464 68 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='464' y='40' width='128' height='128' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
+<a xlink:href='#my_database.PLAYLIST'><text x='497' y='59' >PLAYLIST</text><title>Table my_database.PLAYLIST
+사용자 플레이 리스트 정보 테이블</title></a>
+  <use id='nn' x='466' y='77' xlink:href='#nn'/><use id='pk' x='466' y='76' xlink:href='#pk'><title>Pk Pk_PLAYLIST_PLAYLIST_KEY ( PLAYLIST_KEY ) </title></use><a xlink:href='#my_database.PLAYLIST_PLAYLIST_KEY'><text id='my_database.PLAYLIST.PLAYLIST_KEY' x='483' y='87' onmouseover="hghl(['PL_INVENTORY_IDX_PL_INVENTORY_FK_PLAYLIST_KEY','my_database.PL_INVENTORY.PLAYLIST_KEY'])" onmouseout="uhghl(['PL_INVENTORY_IDX_PL_INVENTORY_FK_PLAYLIST_KEY','my_database.PL_INVENTORY.PLAYLIST_KEY'])">PLAYLIST_KEY</text><title>PLAYLIST_KEY
+* bigint
+레코드 식별자</title></a>
+<a xlink:href='#my_database.PLAYLIST.PLAYLIST_KEY'><use id='ref' x='580' y='76' xlink:href='#ref'/><title>Referred by PL_INVENTORY ( PLAYLIST_KEY ) </title></a>
+  <use id='nn' x='466' y='93' xlink:href='#nn'/><use id='unq' x='466' y='92' xlink:href='#unq'><title>Unq IDX_PLAYLIST_UNIQUE_PLAYLIST_ID ( PLAYLIST_ID ) </title></use><a xlink:href='#my_database.PLAYLIST_PLAYLIST_ID'><text id='my_database.PLAYLIST.PLAYLIST_ID' x='483' y='103'>PLAYLIST_ID</text><title>PLAYLIST_ID
+* char(14)
+레코드 대체 식별자</title></a>
+<text x='589' y='100' text-anchor='end' class='colType'>c</text>  <use id='nn' x='466' y='109' xlink:href='#nn'/><use id='idx' x='466' y='108' xlink:href='#idx'><title>IDX_PLAYLIST_TITLE ( TITLE ) </title></use><a xlink:href='#my_database.PLAYLIST_TITLE'><text id='my_database.PLAYLIST.TITLE' x='483' y='119'>TITLE</text><title>TITLE
+* varchar(150)
+플레이리스트 제목</title></a>
+<text x='589' y='116' text-anchor='end' class='colType'>t</text>  <use id='nn' x='466' y='125' xlink:href='#nn'/><use id='idx' x='466' y='124' xlink:href='#idx'><title>IDX_PLAYLIST_CREATE_BY ( CREATE_BY ) </title></use><a xlink:href='#my_database.PLAYLIST_CREATE_BY'><text id='my_database.PLAYLIST.CREATE_BY' x='483' y='135'>CREATE_BY</text><title>CREATE_BY
+* char(14)
+레코드 생성 사용자 식별자</title></a>
+<text x='589' y='132' text-anchor='end' class='colType'>c</text>  <use id='nn' x='466' y='141' xlink:href='#nn'/><a xlink:href='#my_database.PLAYLIST_CREATE_UTC'><text id='my_database.PLAYLIST.CREATE_UTC' x='483' y='151'>CREATE_UTC</text><title>CREATE_UTC
+* timestamp default CURRENT_TIMESTAMP
+레코드 생성일시</title></a>
+<text x='589' y='148' text-anchor='end' class='colType'>d</text>
 <!-- == Table 'SONG' == -->
 <rect class='entity' style='stroke:#1E578F' x='272' y='40' width='112' height='176' rx='8' ry='8' />
 <path d='M 272 68 L 272 48 Q 272 40 280 40 L 376 40 Q 384 40 384 48 L 384 68 L272 68 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
 <rect class='entity' x='272' y='40' width='112' height='176' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#my_database.SONG'><text x='293' y='59' >SONG</text><title>Table my_database.SONG
+<a xlink:href='#my_database.SONG'><text x='307' y='59' >SONG</text><title>Table my_database.SONG
 곡 정보 테이블</title></a>
   <use id='nn' x='274' y='77' xlink:href='#nn'/><use id='pk' x='274' y='76' xlink:href='#pk'><title>Pk PK_SONGS_SONG_KEY ( SONG_KEY ) </title></use><a xlink:href='#my_database.SONG_SONG_KEY'><text id='my_database.SONG.SONG_KEY' x='291' y='87' onmouseover="hghl(['PL_INVENTORY_IDX_PL_INVENTORY_FK_SONG_KEY','my_database.PL_INVENTORY.SONG_KEY'])" onmouseout="uhghl(['PL_INVENTORY_IDX_PL_INVENTORY_FK_SONG_KEY','my_database.PL_INVENTORY.SONG_KEY'])">SONG_KEY</text><title>SONG_KEY
 * bigint
@@ -310,35 +333,11 @@ ALB_LOCALE ref ALBUM ( ALBUM_KEY )</title></path>
 * timestamp default CURRENT_TIMESTAMP
 레코드 생성일시</title></a>
 <text x='381' y='196' text-anchor='end' class='colType'>d</text>
-<!-- == Table 'ALBUM' == -->
-<rect class='entity' style='stroke:#1E578F' x='48' y='40' width='112' height='128' rx='8' ry='8' />
-<path d='M 48 68 L 48 48 Q 48 40 56 40 L 152 40 Q 160 40 160 48 L 160 68 L48 68 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='48' y='40' width='112' height='128' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#my_database.ALBUM'><text x='66' y='59' >ALBUM</text><title>Table my_database.ALBUM
-앨범 정보 테이블</title></a>
-  <use id='nn' x='50' y='77' xlink:href='#nn'/><use id='pk' x='50' y='76' xlink:href='#pk'><title>Pk Pk_ALBUM_KEY ( ALBUM_KEY ) </title></use><a xlink:href='#my_database.ALBUM_ALBUM_KEY'><text id='my_database.ALBUM.ALBUM_KEY' x='67' y='87' onmouseover="hghl(['ALB_LOCALE_IDX_ALB_LOCALE_FK_ALBUM_KEY','my_database.ALB_LOCALE.ALBUM_KEY','SONG_IDX_SONG_FK_ALBUM_KEY','my_database.SONG.ALBUM_KEY'])" onmouseout="uhghl(['ALB_LOCALE_IDX_ALB_LOCALE_FK_ALBUM_KEY','my_database.ALB_LOCALE.ALBUM_KEY','SONG_IDX_SONG_FK_ALBUM_KEY','my_database.SONG.ALBUM_KEY'])">ALBUM_KEY</text><title>ALBUM_KEY
-* bigint
-레코드 식별자</title></a>
-<a xlink:href='#my_database.ALBUM.ALBUM_KEY'><use id='ref' x='148' y='76' xlink:href='#ref'/><title>Referred by ALB_LOCALE ( ALBUM_KEY )
-Referred by SONG ( ALBUM_KEY ) </title></a>
-  <use id='nn' x='50' y='93' xlink:href='#nn'/><use id='unq' x='50' y='92' xlink:href='#unq'><title>Unq IDX_ALBUM_UNIQUE_ALBUM_ID ( ALBUM_ID ) </title></use><a xlink:href='#my_database.ALBUM_ALBUM_ID'><text id='my_database.ALBUM.ALBUM_ID' x='67' y='103'>ALBUM_ID</text><title>ALBUM_ID
-* char(14)
-앨범 레코드 대체 식별자</title></a>
-<text x='157' y='100' text-anchor='end' class='colType'>c</text>  <use id='nn' x='50' y='109' xlink:href='#nn'/><use id='idx' x='50' y='108' xlink:href='#idx'><title>IDX_ALBUM_TITLE ( TITLE ) </title></use><a xlink:href='#my_database.ALBUM_TITLE'><text id='my_database.ALBUM.TITLE' x='67' y='119'>TITLE</text><title>TITLE
-* varchar(150)
-앨범 타이틀</title></a>
-<text x='157' y='116' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='125' xlink:href='#nn'/><a xlink:href='#my_database.ALBUM_DELETED'><text id='my_database.ALBUM.DELETED' x='67' y='135'>DELETED</text><title>DELETED
-* boolean default 0
-삭제 여부</title></a>
-<text x='157' y='132' text-anchor='end' class='colType'>b</text>  <use id='nn' x='50' y='141' xlink:href='#nn'/><a xlink:href='#my_database.ALBUM_CREATE_UTC'><text id='my_database.ALBUM.CREATE_UTC' x='67' y='151'>CREATE_UTC</text><title>CREATE_UTC
-* timestamp default CURRENT_TIMESTAMP
-레코드 생성일시</title></a>
-<text x='157' y='148' text-anchor='end' class='colType'>d</text>
 <!-- == Table 'PL_INVENTORY' == -->
 <rect class='entity' style='stroke:#1E578F' x='352' y='296' width='128' height='128' rx='8' ry='8' />
 <path d='M 352 324 L 352 304 Q 352 296 360 296 L 472 296 Q 480 296 480 304 L 480 324 L352 324 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
 <rect class='entity' x='352' y='296' width='128' height='128' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#my_database.PL_INVENTORY'><text x='356' y='315' >PL_INVENTORY</text><title>Table my_database.PL_INVENTORY
+<a xlink:href='#my_database.PL_INVENTORY'><text x='369' y='315' >PL_INVENTORY</text><title>Table my_database.PL_INVENTORY
 사용자 플레이리스트 수록곡 정보 테이블</title></a>
   <use id='nn' x='354' y='333' xlink:href='#nn'/><use id='pk' x='354' y='332' xlink:href='#pk'><title>Pk Pk_PL_INVENTORY_INVENTORY_KEY ( INVENTORY_KEY ) </title></use><a xlink:href='#my_database.PL_INVENTORY_INVENTORY_KEY'><text id='my_database.PL_INVENTORY.INVENTORY_KEY' x='371' y='343'>INVENTORY_KEY</text><title>INVENTORY_KEY
 * bigint
@@ -358,11 +357,35 @@ Referred by SONG ( ALBUM_KEY ) </title></a>
 * timestamp default CURRENT_TIMESTAMP
 레코드 생성일시</title></a>
 <text x='477' y='404' text-anchor='end' class='colType'>d</text>
+<!-- == Table 'ALBUM' == -->
+<rect class='entity' style='stroke:#1E578F' x='48' y='40' width='112' height='128' rx='8' ry='8' />
+<path d='M 48 68 L 48 48 Q 48 40 56 40 L 152 40 Q 160 40 160 48 L 160 68 L48 68 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='48' y='40' width='112' height='128' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
+<a xlink:href='#my_database.ALBUM'><text x='79' y='59' >ALBUM</text><title>Table my_database.ALBUM
+앨범 정보 테이블</title></a>
+  <use id='nn' x='50' y='77' xlink:href='#nn'/><use id='pk' x='50' y='76' xlink:href='#pk'><title>Pk Pk_ALBUM_KEY ( ALBUM_KEY ) </title></use><a xlink:href='#my_database.ALBUM_ALBUM_KEY'><text id='my_database.ALBUM.ALBUM_KEY' x='67' y='87' onmouseover="hghl(['ALB_LOCALE_IDX_ALB_LOCALE_FK_ALBUM_KEY','my_database.ALB_LOCALE.ALBUM_KEY','SONG_IDX_SONG_FK_ALBUM_KEY','my_database.SONG.ALBUM_KEY'])" onmouseout="uhghl(['ALB_LOCALE_IDX_ALB_LOCALE_FK_ALBUM_KEY','my_database.ALB_LOCALE.ALBUM_KEY','SONG_IDX_SONG_FK_ALBUM_KEY','my_database.SONG.ALBUM_KEY'])">ALBUM_KEY</text><title>ALBUM_KEY
+* bigint
+레코드 식별자</title></a>
+<a xlink:href='#my_database.ALBUM.ALBUM_KEY'><use id='ref' x='148' y='76' xlink:href='#ref'/><title>Referred by ALB_LOCALE ( ALBUM_KEY ) 
+Referred by SONG ( ALBUM_KEY ) </title></a>
+  <use id='nn' x='50' y='93' xlink:href='#nn'/><use id='unq' x='50' y='92' xlink:href='#unq'><title>Unq IDX_ALBUM_UNIQUE_ALBUM_ID ( ALBUM_ID ) </title></use><a xlink:href='#my_database.ALBUM_ALBUM_ID'><text id='my_database.ALBUM.ALBUM_ID' x='67' y='103'>ALBUM_ID</text><title>ALBUM_ID
+* char(14)
+앨범 레코드 대체 식별자</title></a>
+<text x='157' y='100' text-anchor='end' class='colType'>c</text>  <use id='nn' x='50' y='109' xlink:href='#nn'/><use id='idx' x='50' y='108' xlink:href='#idx'><title>IDX_ALBUM_TITLE ( TITLE ) </title></use><a xlink:href='#my_database.ALBUM_TITLE'><text id='my_database.ALBUM.TITLE' x='67' y='119'>TITLE</text><title>TITLE
+* varchar(150)
+앨범 타이틀</title></a>
+<text x='157' y='116' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='125' xlink:href='#nn'/><a xlink:href='#my_database.ALBUM_DELETED'><text id='my_database.ALBUM.DELETED' x='67' y='135'>DELETED</text><title>DELETED
+* boolean default 0
+삭제 여부</title></a>
+<text x='157' y='132' text-anchor='end' class='colType'>b</text>  <use id='nn' x='50' y='141' xlink:href='#nn'/><a xlink:href='#my_database.ALBUM_CREATE_UTC'><text id='my_database.ALBUM.CREATE_UTC' x='67' y='151'>CREATE_UTC</text><title>CREATE_UTC
+* timestamp default CURRENT_TIMESTAMP
+레코드 생성일시</title></a>
+<text x='157' y='148' text-anchor='end' class='colType'>d</text>
 <!-- == Table 'ALB_LOCALE' == -->
 <rect class='entity' style='stroke:#1E578F' x='48' y='296' width='128' height='112' rx='8' ry='8' />
 <path d='M 48 324 L 48 304 Q 48 296 56 296 L 168 296 Q 176 296 176 304 L 176 324 L48 324 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
 <rect class='entity' x='48' y='296' width='128' height='112' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#my_database.ALB_LOCALE'><text x='58' y='315' >ALB_LOCALE</text><title>Table my_database.ALB_LOCALE
+<a xlink:href='#my_database.ALB_LOCALE'><text x='72' y='315' >ALB_LOCALE</text><title>Table my_database.ALB_LOCALE
 앨범 서비스 가능 지역 코드 정보 테이블</title></a>
   <use id='nn' x='50' y='333' xlink:href='#nn'/><use id='pk' x='50' y='332' xlink:href='#pk'><title>Pk Pk_ALB_LOCALE_LOCALE_KEY ( LOCALE_KEY ) </title></use><a xlink:href='#my_database.ALB_LOCALE_LOCALE_KEY'><text id='my_database.ALB_LOCALE.LOCALE_KEY' x='67' y='343'>LOCALE_KEY</text><title>LOCALE_KEY
 * bigint
@@ -378,29 +401,6 @@ Referred by SONG ( ALBUM_KEY ) </title></a>
 * timestamp default CURRENT_TIMESTAMP
 레코드 생성일시</title></a>
 <text x='173' y='388' text-anchor='end' class='colType'>d</text>
-<!-- == Table 'PLAYLIST' == -->
-<rect class='entity' style='stroke:#1E578F' x='464' y='40' width='128' height='128' rx='8' ry='8' />
-<path d='M 464 68 L 464 48 Q 464 40 472 40 L 584 40 Q 592 40 592 48 L 592 68 L464 68 ' style='fill:url(#tbg_C1D8EE);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='464' y='40' width='128' height='128' rx='8' ry='8' style='fill:none;stroke:#DADDE1'/>
-<a xlink:href='#my_database.PLAYLIST'><text x='484' y='59' >PLAYLIST</text><title>Table my_database.PLAYLIST
-사용자 플레이 리스트 정보 테이블</title></a>
-  <use id='nn' x='466' y='77' xlink:href='#nn'/><use id='pk' x='466' y='76' xlink:href='#pk'><title>Pk Pk_PLAYLIST_PLAYLIST_KEY ( PLAYLIST_KEY ) </title></use><a xlink:href='#my_database.PLAYLIST_PLAYLIST_KEY'><text id='my_database.PLAYLIST.PLAYLIST_KEY' x='483' y='87' onmouseover="hghl(['PL_INVENTORY_IDX_PL_INVENTORY_FK_PLAYLIST_KEY','my_database.PL_INVENTORY.PLAYLIST_KEY'])" onmouseout="uhghl(['PL_INVENTORY_IDX_PL_INVENTORY_FK_PLAYLIST_KEY','my_database.PL_INVENTORY.PLAYLIST_KEY'])">PLAYLIST_KEY</text><title>PLAYLIST_KEY
-* bigint
-레코드 식별자</title></a>
-<a xlink:href='#my_database.PLAYLIST.PLAYLIST_KEY'><use id='ref' x='580' y='76' xlink:href='#ref'/><title>Referred by PL_INVENTORY ( PLAYLIST_KEY ) </title></a>
-  <use id='nn' x='466' y='93' xlink:href='#nn'/><use id='unq' x='466' y='92' xlink:href='#unq'><title>Unq IDX_PLAYLIST_UNIQUE_PLAYLIST_ID ( PLAYLIST_ID ) </title></use><a xlink:href='#my_database.PLAYLIST_PLAYLIST_ID'><text id='my_database.PLAYLIST.PLAYLIST_ID' x='483' y='103'>PLAYLIST_ID</text><title>PLAYLIST_ID
-* char(14)
-레코드 대체 식별자</title></a>
-<text x='589' y='100' text-anchor='end' class='colType'>c</text>  <use id='nn' x='466' y='109' xlink:href='#nn'/><use id='idx' x='466' y='108' xlink:href='#idx'><title>IDX_PLAYLIST_TITLE ( TITLE ) </title></use><a xlink:href='#my_database.PLAYLIST_TITLE'><text id='my_database.PLAYLIST.TITLE' x='483' y='119'>TITLE</text><title>TITLE
-* varchar(150)
-플레이리스트 제목</title></a>
-<text x='589' y='116' text-anchor='end' class='colType'>t</text>  <use id='nn' x='466' y='125' xlink:href='#nn'/><use id='idx' x='466' y='124' xlink:href='#idx'><title>IDX_PLAYLIST_CREATE_BY ( CREATE_BY ) </title></use><a xlink:href='#my_database.PLAYLIST_CREATE_BY'><text id='my_database.PLAYLIST.CREATE_BY' x='483' y='135'>CREATE_BY</text><title>CREATE_BY
-* char(14)
-레코드 생성 사용자 식별자</title></a>
-<text x='589' y='132' text-anchor='end' class='colType'>c</text>  <use id='nn' x='466' y='141' xlink:href='#nn'/><a xlink:href='#my_database.PLAYLIST_CREATE_UTC'><text id='my_database.PLAYLIST.CREATE_UTC' x='483' y='151'>CREATE_UTC</text><title>CREATE_UTC
-* timestamp default CURRENT_TIMESTAMP
-레코드 생성일시</title></a>
-<text x='589' y='148' text-anchor='end' class='colType'>d</text>
 </g></svg></div>
 <div class='container'>
 
@@ -451,15 +451,15 @@ Referred by SONG ( ALBUM_KEY ) </title></a>
 		<td> 레코드 생성일시 </td>
 	</tr>
 <tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Pk&#95;FLO&#95;ALBUM&#95;KEY</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Pk&#95;ALBUM&#95;KEY</td>
 		<td> ON ALBUM&#95;KEY</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;FLO&#95;ALBUM&#95;UNIQUE&#95;ALBUM&#95;ID</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;ALBUM&#95;UNIQUE&#95;ALBUM&#95;ID</td>
 		<td> ON ALBUM&#95;ID</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;FLO&#95;ALBUM&#95;TITLE</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;ALBUM&#95;TITLE</td>
 		<td> ON TITLE</td>
 		<td>  </td>
 	</tr>
@@ -499,18 +499,18 @@ Referred by SONG ( ALBUM_KEY ) </title></a>
 		<td> 레코드 생성일시 </td>
 	</tr>
 <tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Pk&#95;FLO&#95;ALB&#95;LOCALE&#95;LOCALE&#95;KEY</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Pk&#95;ALB&#95;LOCALE&#95;LOCALE&#95;KEY</td>
 		<td> ON LOCALE&#95;KEY</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;FLO&#95;ALB&#95;LOCALE&#95;UNIQUE&#95;LOCALE</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;ALB&#95;LOCALE&#95;UNIQUE&#95;LOCALE</td>
 		<td> ON ALBUM&#95;KEY&#44; LOCALE&#95;CODE</td>
 		<td>  </td>
 	</tr>
 <tr><th colspan='4'>Foreign Keys</th></tr>
 	<tr>
 		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>IDX_ALB_LOCALE_FK_ALBUM_KEY</td>
-		<td > ( ALBUM&#95;KEY ) ref <a href='#my&#95;database&#46;FLO&#95;ALBUM'>FLO&#95;ALBUM</a> (ALBUM&#95;KEY) </td>
+		<td > ( ALBUM&#95;KEY ) ref <a href='#my&#95;database&#46;ALBUM'>ALBUM</a> (ALBUM&#95;KEY) </td>
 		<td>  </td>
 	</tr>
 </tbody>
@@ -555,19 +555,19 @@ Referred by SONG ( ALBUM_KEY ) </title></a>
 		<td> 레코드 생성일시 </td>
 	</tr>
 <tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Pk&#95;FLO&#95;PLAYLIST&#95;PLAYLIST&#95;KEY</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Pk&#95;PLAYLIST&#95;PLAYLIST&#95;KEY</td>
 		<td> ON PLAYLIST&#95;KEY</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;FLO&#95;PLAYLIST&#95;TITLE</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;PLAYLIST&#95;TITLE</td>
 		<td> ON TITLE</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;FLO&#95;PLAYLIST&#95;CREATE&#95;BY</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;PLAYLIST&#95;CREATE&#95;BY</td>
 		<td> ON CREATE&#95;BY</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;FLO&#95;PLAYLIST&#95;UNIQUE&#95;PLAYLIST&#95;ID</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;PLAYLIST&#95;UNIQUE&#95;PLAYLIST&#95;ID</td>
 		<td> ON PLAYLIST&#95;ID</td>
 		<td>  </td>
 	</tr>
@@ -613,23 +613,23 @@ Referred by SONG ( ALBUM_KEY ) </title></a>
 		<td> 레코드 생성일시 </td>
 	</tr>
 <tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Pk&#95;FLO&#95;PL&#95;INVENTORY&#95;INVENTORY&#95;KEY</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Pk&#95;PL&#95;INVENTORY&#95;INVENTORY&#95;KEY</td>
 		<td> ON INVENTORY&#95;KEY</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;FLO&#95;PL&#95;INVENTORY&#95;UNIQUE&#95;INVENTORY&#95;ID</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;PL&#95;INVENTORY&#95;UNIQUE&#95;INVENTORY&#95;ID</td>
 		<td> ON INVENTORY&#95;ID</td>
 		<td>  </td>
 	</tr>
 <tr><th colspan='4'>Foreign Keys</th></tr>
 	<tr>
 		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>IDX_PL_INVENTORY_FK_PLAYLIST_KEY</td>
-		<td > ( PLAYLIST&#95;KEY ) ref <a href='#my&#95;database&#46;FLO&#95;PLAYLIST'>FLO&#95;PLAYLIST</a> (PLAYLIST&#95;KEY) </td>
+		<td > ( PLAYLIST&#95;KEY ) ref <a href='#my&#95;database&#46;PLAYLIST'>PLAYLIST</a> (PLAYLIST&#95;KEY) </td>
 		<td>  </td>
 	</tr>
 	<tr>
 		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>IDX_PL_INVENTORY_FK_SONG_KEY</td>
-		<td > ( SONG&#95;KEY ) ref <a href='#my&#95;database&#46;FLO&#95;SONG'>FLO&#95;SONG</a> (SONG&#95;KEY) </td>
+		<td > ( SONG&#95;KEY ) ref <a href='#my&#95;database&#46;SONG'>SONG</a> (SONG&#95;KEY) </td>
 		<td>  </td>
 	</tr>
 </tbody>
@@ -692,26 +692,26 @@ Referred by SONG ( ALBUM_KEY ) </title></a>
 		<td> 레코드 생성일시 </td>
 	</tr>
 <tr><th colspan='4'>Indexes</th></tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>PK&#95;FLO&#95;SONGS&#95;SONG&#95;KEY</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>PK&#95;SONGS&#95;SONG&#95;KEY</td>
 		<td> ON SONG&#95;KEY</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;FLO&#95;SONG&#95;UNIQUE&#95;SONG&#95;ID</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>IDX&#95;SONG&#95;UNIQUE&#95;SONG&#95;ID</td>
 		<td> ON SONG&#95;ID</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;FLO&#95;SONG&#95;FK&#95;ALBUM&#95;KEY</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;SONG&#95;FK&#95;ALBUM&#95;KEY</td>
 		<td> ON ALBUM&#95;KEY</td>
 		<td>  </td>
 	</tr>
-	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;FLO&#95;SONG&#95;TITLE</td>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>IDX&#95;SONG&#95;TITLE</td>
 		<td> ON TITLE</td>
 		<td>  </td>
 	</tr>
 <tr><th colspan='4'>Foreign Keys</th></tr>
 	<tr>
 		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>IDX_SONG_FK_ALBUM_KEY</td>
-		<td > ( ALBUM&#95;KEY ) ref <a href='#my&#95;database&#46;FLO&#95;ALBUM'>FLO&#95;ALBUM</a> (ALBUM&#95;KEY) </td>
+		<td > ( ALBUM&#95;KEY ) ref <a href='#my&#95;database&#46;ALBUM'>ALBUM</a> (ALBUM&#95;KEY) </td>
 		<td>  </td>
 	</tr>
 </tbody>
