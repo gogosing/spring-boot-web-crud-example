@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="FLO" id="Project_28b68ef" database="MySql" >
+	<schema name="my_database" >
+		<table name="ALBUM" >
+			<options><![CDATA[engine=InnoDB]]></options>
+			<comment><![CDATA[앨범 정보 테이블]]></comment>
+			<column name="ALBUM_KEY" type="bigint" jt="-5" mandatory="y" autoincrement="y" >
+				<comment><![CDATA[레코드 식별자]]></comment>
+			</column>
+			<column name="ALBUM_ID" type="char" length="14" jt="1" mandatory="y" >
+				<comment><![CDATA[앨범 레코드 대체 식별자]]></comment>
+			</column>
+			<column name="TITLE" type="varchar" length="150" jt="12" mandatory="y" >
+				<comment><![CDATA[앨범 타이틀]]></comment>
+			</column>
+			<column name="DELETED" type="boolean" jt="-7" mandatory="y" >
+				<defo>0</defo>
+				<comment><![CDATA[삭제 여부]]></comment>
+			</column>
+			<column name="CREATE_UTC" type="timestamp" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+				<comment><![CDATA[레코드 생성일시]]></comment>
+			</column>
+			<index name="Pk_ALBUM_KEY" unique="PRIMARY_KEY" >
+				<column name="ALBUM_KEY" />
+			</index>
+			<index name="IDX_ALBUM_UNIQUE_ALBUM_ID" unique="UNIQUE" >
+				<column name="ALBUM_ID" />
+			</index>
+			<index name="IDX_ALBUM_TITLE" unique="NORMAL" >
+				<column name="TITLE" />
+			</index>
+		</table>
+		<table name="ALB_LOCALE" >
+			<options><![CDATA[engine=InnoDB]]></options>
+			<comment><![CDATA[앨범 서비스 가능 지역 코드 정보 테이블]]></comment>
+			<column name="LOCALE_KEY" type="bigint" jt="-5" mandatory="y" autoincrement="y" >
+				<comment><![CDATA[레코드 식별자]]></comment>
+			</column>
+			<column name="ALBUM_KEY" type="bigint" jt="-5" mandatory="y" >
+				<comment><![CDATA[앨범 레코드 식별자]]></comment>
+			</column>
+			<column name="LOCALE_CODE" type="char" length="3" jt="1" mandatory="y" >
+				<comment><![CDATA[서비스 지역 코드]]></comment>
+			</column>
+			<column name="CREATE_UTC" type="timestamp" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+				<comment><![CDATA[레코드 생성일시]]></comment>
+			</column>
+			<index name="Pk_ALB_LOCALE_LOCALE_KEY" unique="PRIMARY_KEY" >
+				<column name="LOCALE_KEY" />
+			</index>
+			<index name="IDX_ALB_LOCALE_UNIQUE_LOCALE" unique="UNIQUE" >
+				<column name="ALBUM_KEY" />
+				<column name="LOCALE_CODE" />
+			</index>
+			<fk name="IDX_ALB_LOCALE_FK_ALBUM_KEY" to_schema="my_database" to_table="ALBUM" >
+				<fk_column name="ALBUM_KEY" pk="ALBUM_KEY" />
+			</fk>
+		</table>
+		<table name="PLAYLIST" >
+			<options><![CDATA[engine=InnoDB]]></options>
+			<comment><![CDATA[사용자 플레이 리스트 정보 테이블]]></comment>
+			<column name="PLAYLIST_KEY" type="bigint" jt="-5" mandatory="y" autoincrement="y" >
+				<comment><![CDATA[레코드 식별자]]></comment>
+			</column>
+			<column name="PLAYLIST_ID" type="char" length="14" jt="1" mandatory="y" >
+				<comment><![CDATA[레코드 대체 식별자]]></comment>
+			</column>
+			<column name="TITLE" type="varchar" length="150" jt="12" mandatory="y" >
+				<comment><![CDATA[플레이리스트 제목]]></comment>
+			</column>
+			<column name="CREATE_BY" type="char" length="14" jt="1" mandatory="y" >
+				<comment><![CDATA[레코드 생성 사용자 식별자]]></comment>
+			</column>
+			<column name="CREATE_UTC" type="timestamp" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+				<comment><![CDATA[레코드 생성일시]]></comment>
+			</column>
+			<index name="Pk_PLAYLIST_PLAYLIST_KEY" unique="PRIMARY_KEY" >
+				<column name="PLAYLIST_KEY" />
+			</index>
+			<index name="IDX_PLAYLIST_TITLE" unique="NORMAL" >
+				<column name="TITLE" />
+			</index>
+			<index name="IDX_PLAYLIST_CREATE_BY" unique="NORMAL" >
+				<column name="CREATE_BY" />
+			</index>
+			<index name="IDX_PLAYLIST_UNIQUE_PLAYLIST_ID" unique="UNIQUE" >
+				<column name="PLAYLIST_ID" />
+			</index>
+		</table>
+		<table name="PL_INVENTORY" >
+			<options><![CDATA[engine=InnoDB]]></options>
+			<comment><![CDATA[사용자 플레이리스트 수록곡 정보 테이블]]></comment>
+			<column name="INVENTORY_KEY" type="bigint" jt="-5" mandatory="y" autoincrement="y" >
+				<comment><![CDATA[레코드 식별자]]></comment>
+			</column>
+			<column name="INVENTORY_ID" type="char" length="14" jt="1" mandatory="y" >
+				<comment><![CDATA[레코드 대체 식별자]]></comment>
+			</column>
+			<column name="PLAYLIST_KEY" type="bigint" jt="-5" mandatory="y" >
+				<comment><![CDATA[플레이리스트 레코드 식별자]]></comment>
+			</column>
+			<column name="SONG_KEY" type="bigint" jt="-5" mandatory="y" >
+				<comment><![CDATA[곡 레코드 식별자]]></comment>
+			</column>
+			<column name="CREATE_UTC" type="timestamp" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+				<comment><![CDATA[레코드 생성일시]]></comment>
+			</column>
+			<index name="Pk_PL_INVENTORY_INVENTORY_KEY" unique="PRIMARY_KEY" >
+				<column name="INVENTORY_KEY" />
+			</index>
+			<index name="IDX_PL_INVENTORY_UNIQUE_INVENTORY_ID" unique="UNIQUE" >
+				<column name="INVENTORY_ID" />
+			</index>
+			<fk name="IDX_PL_INVENTORY_FK_PLAYLIST_KEY" to_schema="my_database" to_table="PLAYLIST" >
+				<fk_column name="PLAYLIST_KEY" pk="PLAYLIST_KEY" />
+			</fk>
+			<fk name="IDX_PL_INVENTORY_FK_SONG_KEY" to_schema="my_database" to_table="SONG" >
+				<fk_column name="SONG_KEY" pk="SONG_KEY" />
+			</fk>
+		</table>
+		<table name="SONG" >
+			<options><![CDATA[engine=InnoDB]]></options>
+			<comment><![CDATA[곡 정보 테이블]]></comment>
+			<column name="SONG_KEY" type="bigint" jt="-5" mandatory="y" autoincrement="y" >
+				<comment><![CDATA[레코드 식별자]]></comment>
+			</column>
+			<column name="SONG_ID" type="char" length="14" jt="1" mandatory="y" >
+				<comment><![CDATA[레코드 대체 식별자]]></comment>
+			</column>
+			<column name="ALBUM_KEY" type="bigint" jt="-5" mandatory="y" >
+				<comment><![CDATA[소속 앨범 레코드 식별자]]></comment>
+			</column>
+			<column name="TITLE" type="varchar" length="150" jt="12" mandatory="y" >
+				<comment><![CDATA[제목]]></comment>
+			</column>
+			<column name="LENGTH" type="int" jt="4" mandatory="y" >
+				<comment><![CDATA[곡 길이]]></comment>
+			</column>
+			<column name="TRACK_NO" type="tinyint" jt="-6" mandatory="y" >
+				<comment><![CDATA[트랙 번호]]></comment>
+			</column>
+			<column name="DELETED" type="boolean" jt="-7" mandatory="y" >
+				<defo>0</defo>
+				<comment><![CDATA[삭제 여부]]></comment>
+			</column>
+			<column name="CREATE_UTC" type="timestamp" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+				<comment><![CDATA[레코드 생성일시]]></comment>
+			</column>
+			<index name="PK_SONGS_SONG_KEY" unique="PRIMARY_KEY" >
+				<column name="SONG_KEY" />
+			</index>
+			<index name="IDX_SONG_UNIQUE_SONG_ID" unique="UNIQUE" >
+				<column name="SONG_ID" />
+			</index>
+			<index name="IDX_SONG_FK_ALBUM_KEY" unique="NORMAL" >
+				<column name="ALBUM_KEY" />
+			</index>
+			<index name="IDX_SONG_TITLE" unique="NORMAL" >
+				<column name="TITLE" />
+			</index>
+			<fk name="IDX_SONG_FK_ALBUM_KEY" to_schema="my_database" to_table="ALBUM" >
+				<fk_column name="ALBUM_KEY" pk="ALBUM_KEY" />
+			</fk>
+		</table>
+	</schema>
+	<connector name="FLO" database="MySql" driver_class="com.mysql.jdbc.Driver" driver_jar="mysql-connector-java-8.0.18.jar" driver_desc="Standard" host="localhost" port="3306" instance="my_database" user="root" passwd="cGFzc3dvcmQ=" />
+	<layout name="Sample Layout with Tools" id="Layout_67dbd" show_column_type="y" show_relation="columns" >
+		<callout x="48" y="48" pointer="Round" >
+			<comment><![CDATA[This is a sample layout with tools.
+Double-click any table, column or foreign key to edit.
+For better understanding the schema create multiple layouts.
+Layouts and schema structure are saved to project file.]]></comment>
+		</callout>
+		<script name="Sample SQL Editor" id="Editor_554aa79" language="SQL" >
+			<string><![CDATA[SELECT id, name, quantity
+FROM
+	my_database.`Items` s;]]></string>
+		</script>
+	</layout>
+	<layout name="design" id="Layout_41d07a" show_relation="columns" >
+		<comment><![CDATA[database]]></comment>
+		<entity schema="my_database" name="SONG" color="C1D8EE" x="272" y="48" />
+		<entity schema="my_database" name="ALBUM" color="C1D8EE" x="48" y="48" />
+		<entity schema="my_database" name="PL_INVENTORY" color="C1D8EE" x="352" y="304" />
+		<entity schema="my_database" name="ALB_LOCALE" color="C1D8EE" x="48" y="304" />
+		<entity schema="my_database" name="PLAYLIST" color="C1D8EE" x="464" y="48" />
+	</layout>
+</project>

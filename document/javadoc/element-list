@@ -1,0 +1,16 @@
+me.gogosing
+me.gogosing.component
+me.gogosing.component.impl
+me.gogosing.config
+me.gogosing.consts
+me.gogosing.controller
+me.gogosing.converter
+me.gogosing.exception
+me.gogosing.model
+me.gogosing.persistence.entity
+me.gogosing.persistence.repository
+me.gogosing.persistence.repository.custom
+me.gogosing.persistence.repository.custom.impl
+me.gogosing.service
+me.gogosing.service.impl
+me.gogosing.web.servlet
