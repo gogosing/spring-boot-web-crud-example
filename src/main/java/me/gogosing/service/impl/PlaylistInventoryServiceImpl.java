@@ -55,6 +55,7 @@ public class PlaylistInventoryServiceImpl implements PlaylistInventoryService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<Inventory> getInventory(String userId, String id) {
         return getPlaylistEntityWithSongEntities(userId, id)
                 .getPlaylistInventoryEntities().stream()

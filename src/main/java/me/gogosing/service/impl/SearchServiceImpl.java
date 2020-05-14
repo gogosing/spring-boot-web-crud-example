@@ -7,6 +7,7 @@ import me.gogosing.persistence.repository.AlbumRepository;
 import me.gogosing.persistence.repository.SongRepository;
 import me.gogosing.service.SearchService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Comparator;
 import java.util.List;
@@ -31,6 +32,7 @@ public class SearchServiceImpl implements SearchService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<Album> getAlbumList(String title, String locale) {
         return albumRepository.getAlbumEntities(title, locale).stream().map(albumEntity -> {
             final Album album = new Album();
@@ -51,6 +53,7 @@ public class SearchServiceImpl implements SearchService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<Song> getSongList(String title, String locale) {
         return songRepository.getSongEntities(title, locale).stream().map(songEntity -> {
             final Song song = new Song();

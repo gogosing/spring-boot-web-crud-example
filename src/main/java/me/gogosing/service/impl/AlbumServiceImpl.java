@@ -1,6 +1,7 @@
 package me.gogosing.service.impl;
 
 import me.gogosing.component.PagesComponent;
+import me.gogosing.consts.ApplicationConstants;
 import me.gogosing.model.Album;
 import me.gogosing.model.Pages;
 import me.gogosing.model.Pagination;
@@ -9,11 +10,11 @@ import me.gogosing.persistence.entity.AlbumEntity;
 import me.gogosing.persistence.entity.SongEntity;
 import me.gogosing.persistence.repository.AlbumRepository;
 import me.gogosing.service.AlbumService;
-import me.gogosing.consts.ApplicationConstants;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -44,6 +45,7 @@ public class AlbumServiceImpl implements AlbumService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Pagination getAlbumPagination(int page, int size, String locale) {
         final Page<AlbumEntity> paginatedResult = albumRepository.getPaginatedAlbumEntities(
                 locale,

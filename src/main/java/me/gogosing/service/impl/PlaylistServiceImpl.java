@@ -61,6 +61,7 @@ public class PlaylistServiceImpl implements PlaylistService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<Playlist> getPlaylist(String userId) {
         return playlistRepository.getPlaylistEntities(userId).stream().map(playlistEntity -> {
             final Playlist playlist = new Playlist();
