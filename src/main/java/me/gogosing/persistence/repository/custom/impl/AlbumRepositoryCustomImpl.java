@@ -1,5 +1,6 @@
 package me.gogosing.persistence.repository.custom.impl;
 
+import com.querydsl.core.QueryResults;
 import me.gogosing.persistence.entity.AlbumEntity;
 import me.gogosing.persistence.entity.QAlbumEntity;
 import me.gogosing.persistence.entity.QAlbumLocaleEntity;
@@ -77,17 +78,12 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
                         albumLocaleEntity.localeCode.in(ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE, locale)
                 );
 
-        List<AlbumEntity> results = query
+        QueryResults<AlbumEntity> queryResults = query
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
                 .orderBy(albumEntity.createOn.desc())
-                .fetch();
+                .fetchResults();
 
-        long total = 0L;
-        if (!results.isEmpty()) {
-            total = query.select(albumEntity).distinct().fetchCount();
-        }
-
-        return new PageImpl(results, pageable, total);
+        return new PageImpl(queryResults.getResults(), pageable, queryResults.getTotal());
     }
 }
