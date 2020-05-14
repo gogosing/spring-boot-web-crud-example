@@ -10,7 +10,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 configurations {
@@ -21,7 +21,7 @@ configurations {
 }
 
 dependencies {
-    implementation('org.springframework.boot:spring-boot-starter-web'){
+    implementation("org.springframework.boot:spring-boot-starter-web"){
         exclude module: "spring-boot-starter-tomcat"
     }
     implementation("org.springframework.boot:spring-boot-starter-actuator")
@@ -34,6 +34,7 @@ dependencies {
     implementation("org.flywaydb:flyway-core")
 
     runtimeOnly("mysql:mysql-connector-java")
+
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
@@ -48,7 +49,7 @@ dependencies {
     testRuntimeOnly("com.h2database:h2")
 }
 
-def querydslSrcDir = "$buildDir/generated/source/annotationProcessor/main/java"
+def querydslSrcDir = "src/main/generated"
 
 querydsl {
     library = "com.querydsl:querydsl-apt"
@@ -67,13 +68,9 @@ configurations {
 sourceSets {
     main {
         java {
-            srcDirs(querydslSrcDir)
+            srcDirs = ['src/main/java', querydslSrcDir]
         }
     }
-}
-
-tasks.withType(JavaCompile) {
-    options.annotationProcessorGeneratedSourcesDirectory = file("$buildDir/generated/source/annotationProcessor/main/java")
 }
 
 tasks.withType(Test) {
