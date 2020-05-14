@@ -1,5 +1,8 @@
 package me.gogosing.persistence.entity;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -59,6 +62,7 @@ public class AlbumEntity {
     /**
      * 앨범 소속 곡 목록.
      */
+    @Fetch(FetchMode.SUBSELECT)
     @OneToMany(mappedBy = "albumEntity", fetch = FetchType.LAZY)
     private Set<SongEntity> songEntities = new LinkedHashSet<>();
 

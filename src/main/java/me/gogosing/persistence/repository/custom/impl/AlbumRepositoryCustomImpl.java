@@ -1,12 +1,11 @@
 package me.gogosing.persistence.repository.custom.impl;
 
-import com.querydsl.core.QueryResults;
+import com.querydsl.jpa.JPQLQuery;
 import me.gogosing.persistence.entity.AlbumEntity;
 import me.gogosing.persistence.entity.QAlbumEntity;
 import me.gogosing.persistence.entity.QAlbumLocaleEntity;
 import me.gogosing.persistence.entity.QSongEntity;
 import me.gogosing.persistence.repository.custom.AlbumRepositoryCustom;
-import com.querydsl.jpa.JPQLQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -67,23 +66,25 @@ public class AlbumRepositoryCustomImpl extends QuerydslRepositorySupport impleme
     public Page<AlbumEntity> getPaginatedAlbumEntities(String locale, Pageable pageable) {
         QAlbumEntity albumEntity = QAlbumEntity.albumEntity;
         QAlbumLocaleEntity albumLocaleEntity = QAlbumLocaleEntity.albumLocaleEntity;
-        QSongEntity songEntity = QSongEntity.songEntity;
 
         JPQLQuery<AlbumEntity> query = from(albumEntity)
                 .leftJoin(albumEntity.albumLocaleEntities, albumLocaleEntity)
-                .leftJoin(albumEntity.songEntities, songEntity)
-                .fetchJoin()
                 .where(
                         albumEntity.deleted.isFalse(),
                         albumLocaleEntity.localeCode.in(ALBUM_SERVICE_AVAILABLE_ALL_LOCALE_CODE, locale)
                 );
 
-        QueryResults<AlbumEntity> queryResults = query
+        List<AlbumEntity> results = query
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
                 .orderBy(albumEntity.createOn.desc())
-                .fetchResults();
+                .fetch();
 
-        return new PageImpl(queryResults.getResults(), pageable, queryResults.getTotal());
+        long totalCount = 0L;
+        if (!results.isEmpty()) {
+            totalCount = query.select(albumEntity).distinct().fetchCount();
+        }
+
+        return new PageImpl<>(results, pageable, totalCount);
     }
 }
