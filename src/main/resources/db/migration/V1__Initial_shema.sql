@@ -8,6 +8,12 @@ drop table if exists SONG cascade;
 
 drop table if exists ALBUM cascade;
 
+drop table if exists REVINFO cascade;
+
+drop table if exists PLAYLIST_HISTORY cascade;
+
+drop table if exists PL_INVENTORY_HISTORY cascade;
+
 CREATE TABLE ALBUM (
 	ALBUM_KEY            bigint  NOT NULL  AUTO_INCREMENT  PRIMARY KEY,
 	ALBUM_ID             char(14)  NOT NULL    ,
@@ -132,3 +138,35 @@ ALTER TABLE PL_INVENTORY MODIFY PLAYLIST_KEY bigint  NOT NULL   COMMENT '플레�
 ALTER TABLE PL_INVENTORY MODIFY SONG_KEY bigint  NOT NULL   COMMENT '곡 레코드 식별자';
 
 ALTER TABLE PL_INVENTORY MODIFY CREATE_UTC timestamp  NOT NULL DEFAULT CURRENT_TIMESTAMP  COMMENT '레코드 생성일시';
+
+---
+
+create table REVINFO
+(
+	REV bigint AUTO_INCREMENT PRIMARY KEY,
+	REVTSTMP bigint NULL
+);
+
+CREATE TABLE PLAYLIST_HISTORY (
+	PLAYLIST_KEY         bigint  NOT NULL,
+	REV                  bigint NOT NULL,
+	REVTYPE              tinyint NULL,
+	PLAYLIST_ID          char(14)  NOT NULL    ,
+	TITLE                varchar(150)  NOT NULL    ,
+	CREATE_BY            char(14)  NOT NULL    ,
+	CREATE_UTC           timestamp  NOT NULL DEFAULT CURRENT_TIMESTAMP   ,
+	PRIMARY KEY (PLAYLIST_KEY, REV),
+	CONSTRAINT IDX_PLAYLIST_AUD_FK_REV FOREIGN KEY (REV) REFERENCES REVINFO (REV)
+) DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE PL_INVENTORY_HISTORY (
+	INVENTORY_KEY        bigint  NOT NULL,
+	REV                  bigint NOT NULL,
+	REVTYPE              tinyint NULL,
+	INVENTORY_ID         char(14)  NOT NULL    ,
+	PLAYLIST_KEY         bigint  NOT NULL    ,
+	SONG_KEY             bigint  NOT NULL    ,
+	CREATE_UTC           timestamp  NOT NULL DEFAULT CURRENT_TIMESTAMP   ,
+	PRIMARY KEY (INVENTORY_KEY, REV),
+	CONSTRAINT IDX_PL_INVENTORY_AUD_FK_REV FOREIGN KEY (REV) REFERENCES REVINFO (REV)
+) DEFAULT CHARSET=utf8mb4;

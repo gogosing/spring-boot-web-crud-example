@@ -12,6 +12,12 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     open-in-view: false
+    properties:
+      org:
+        hibernate:
+          envers:
+            audit_table_suffix: _HISTORY
+            store_data_at_delete: true
   flyway:
     enabled: true
 

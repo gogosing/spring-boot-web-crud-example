@@ -1,5 +1,8 @@
 package me.gogosing.persistence.entity;
 
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.RelationTargetAuditMode;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -21,6 +24,7 @@ import java.time.ZonedDateTime;
     name = "PL_INVENTORY",
     uniqueConstraints = {@UniqueConstraint(columnNames = {"INVENTORY_ID"})}
 )
+@Audited
 public class PlaylistInventoryEntity {
 
     /**
@@ -49,6 +53,7 @@ public class PlaylistInventoryEntity {
      */
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "SONG_KEY", referencedColumnName = "SONG_KEY", nullable = false)
+    @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
     private SongEntity songEntity;
 
     /**

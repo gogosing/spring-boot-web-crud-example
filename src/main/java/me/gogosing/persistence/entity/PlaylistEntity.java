@@ -1,5 +1,7 @@
 package me.gogosing.persistence.entity;
 
+import org.hibernate.envers.Audited;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,6 +25,7 @@ import java.util.Set;
     name = "PLAYLIST",
     uniqueConstraints = {@UniqueConstraint(columnNames = {"PLAYLIST_ID"})}
 )
+@Audited
 public class PlaylistEntity {
 
     /**
