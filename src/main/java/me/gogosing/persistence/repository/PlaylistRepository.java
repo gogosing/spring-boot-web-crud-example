@@ -14,5 +14,5 @@ import org.springframework.stereotype.Repository;
 public interface PlaylistRepository extends
         JpaRepository<PlaylistEntity, Long>,
         PlaylistRepositoryCustom,
-        RevisionRepository<PlaylistEntity, Long, Integer> {
+        RevisionRepository<PlaylistEntity, Long, Long> {
 }
