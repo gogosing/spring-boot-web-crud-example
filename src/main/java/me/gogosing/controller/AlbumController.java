@@ -5,13 +5,9 @@ import me.gogosing.model.LocaleCode;
 import me.gogosing.service.AlbumService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 
 import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 
@@ -19,7 +15,6 @@ import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
  * 앨범 Controller.
  * Created by JinBum Jeong on 2020/02/05.
  */
-@Validated
 @RestController
 public class AlbumController {
 
@@ -40,9 +35,9 @@ public class AlbumController {
      */
     @GetMapping("/albums")
     public Pagination getAlbumPagination(
-            @RequestParam(value = "page", defaultValue = "1") @Min(1) int page,
-            @RequestParam(value = "size", defaultValue = "10") @Min(10) int size,
-            @RequestParam(value = "locale") @NotNull LocaleCode locale
+            @RequestParam(value = "page", defaultValue = "1") int page,
+            @RequestParam(value = "size", defaultValue = "10") int size,
+            @RequestParam(value = "locale") LocaleCode locale
     ) {
         Pagination pagination;
         try {

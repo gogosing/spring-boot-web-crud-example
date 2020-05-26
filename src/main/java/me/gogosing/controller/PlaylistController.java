@@ -6,7 +6,6 @@ import me.gogosing.model.Playlist;
 import me.gogosing.model.PlaylistRequest;
 import me.gogosing.service.PlaylistInventoryService;
 import me.gogosing.service.PlaylistService;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -29,7 +27,6 @@ import static java.util.AbstractMap.SimpleEntry;
  * 플레이리스트 Controller.
  * Created by JinBum Jeong on 2020/02/05.
  */
-@Validated
 @RestController
 public class PlaylistController {
 
@@ -54,7 +51,7 @@ public class PlaylistController {
     @PostMapping("/playlist/{userId}")
     public Map<String, String> postPlaylist(
             @PathVariable("userId") String userId,
-            @RequestBody @Valid PlaylistRequest playlistRequest
+            @RequestBody PlaylistRequest playlistRequest
     ) {
         final String storedId = playlistService
                 .createPlaylist(userId, playlistRequest.getTitle());
@@ -116,7 +113,7 @@ public class PlaylistController {
     public void putPlaylist(
             @PathVariable("userId") String userId,
             @PathVariable("id") String id,
-            @RequestBody @Valid PlaylistRequest playlistRequest
+            @RequestBody PlaylistRequest playlistRequest
     ) {
         playlistService.updatePlaylist(userId, id, playlistRequest.getTitle());
     }

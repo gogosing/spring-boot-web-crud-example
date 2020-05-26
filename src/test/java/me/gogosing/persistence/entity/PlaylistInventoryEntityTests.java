@@ -1,11 +1,13 @@
 package me.gogosing.persistence.entity;
 
+import me.gogosing.config.JpaConfiguration;
 import me.gogosing.persistence.repository.PlaylistInventoryRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.persistence.EntityManager;
@@ -17,8 +19,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Created by JinBum Jeong on 2020/02/08.
  */
-@ExtendWith(SpringExtension.class)
 @DataJpaTest
+@Import(JpaConfiguration.class)
+@ExtendWith(SpringExtension.class)
 public class PlaylistInventoryEntityTests {
 
     @Autowired

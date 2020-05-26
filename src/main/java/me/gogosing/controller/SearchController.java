@@ -2,13 +2,10 @@ package me.gogosing.controller;
 
 import me.gogosing.model.LocaleCode;
 import me.gogosing.service.SearchService;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.util.Collections;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -20,7 +17,6 @@ import static java.util.AbstractMap.SimpleEntry;
  * 통합 검색 Controller.
  * Created by JinBum Jeong on 2020/02/06.
  */
-@Validated
 @RestController
 public class SearchController {
 
@@ -38,8 +34,8 @@ public class SearchController {
      */
     @GetMapping("/search")
     public Map<String, Object> getSearchResult(
-            @RequestParam(value = "title") @NotBlank String title,
-            @RequestParam(value = "locale") @NotNull LocaleCode locale
+            @RequestParam(value = "title") String title,
+            @RequestParam(value = "locale") LocaleCode locale
     ) {
         return Collections.unmodifiableMap(Stream.of(
             new SimpleEntry<>("albums", searchService.getAlbumList(title, locale.getCode())),

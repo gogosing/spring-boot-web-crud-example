@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.2.4.RELEASE'
+	id 'org.springframework.boot' version '2.3.0.RELEASE'
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
     id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
@@ -29,9 +29,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.data:spring-data-envers")
-    implementation("com.querydsl:querydsl-apt:4.2.2")
-    implementation("com.querydsl:querydsl-jpa:4.2.2")
-    implementation("org.apache.commons:commons-lang3:3.9")
+    implementation("com.querydsl:querydsl-apt:4.3.1")
+    implementation("com.querydsl:querydsl-jpa:4.3.1")
+    implementation("org.apache.commons:commons-lang3:3.10")
     implementation("org.flywaydb:flyway-core")
 
     runtimeOnly("mysql:mysql-connector-java")
@@ -41,12 +41,12 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude module: "junit-jupiter"
     }
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
-    testImplementation("org.assertj:assertj-core:3.15.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.2")
+    testImplementation("org.assertj:assertj-core:3.16.1")
 
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.0")
-    testRuntimeOnly("org.junit.platform:junit-platform-engine:1.6.0")
-    testRuntimeOnly("org.junit.platform:junit-platform-commons:1.6.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.2")
+    testRuntimeOnly("org.junit.platform:junit-platform-engine:1.6.2")
+    testRuntimeOnly("org.junit.platform:junit-platform-commons:1.6.2")
     testRuntimeOnly("com.h2database:h2")
 }
 
