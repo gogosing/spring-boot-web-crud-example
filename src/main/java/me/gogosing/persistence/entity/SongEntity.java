@@ -1,6 +1,9 @@
 package me.gogosing.persistence.entity;
 
+import me.gogosing.persistence.converter.BooleanToCharConverter;
+
 import javax.persistence.Column;
+import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -65,7 +68,8 @@ public class SongEntity {
     /**
      * 삭제여부.
      */
-    @Column(name = "DELETED", nullable = false)
+    @Convert(converter = BooleanToCharConverter.class)
+    @Column(name = "DELETED", nullable = false, columnDefinition = "char(1)")
     private boolean deleted = false;
 
     /**

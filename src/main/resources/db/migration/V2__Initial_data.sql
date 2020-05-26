@@ -1,96 +1,96 @@
 /* ALBUM */
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000001', 'Please Please Me (1963.3)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000001', 'Please Please Me (1963.3)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000002', 'With The Beatles (1963.11)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000002', 'With The Beatles (1963.11)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000003', 'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000003', 'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000004', 'Help! (1965.8)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000004', 'Help! (1965.8)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000005', 'Rubber Soul (1965.12)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000005', 'Rubber Soul (1965.12)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000006', 'Revolver (1966.8)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000006', 'Revolver (1966.8)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000007', 'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2]', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000007', 'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2]', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000008', 'The Beatles(aka 화이트 앨범) (1968.11)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000008', 'The Beatles(aka 화이트 앨범) (1968.11)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000009', 'Yellow Submarine (1969.1)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000009', 'Yellow Submarine (1969.1)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000010', 'Abbey Road (1969.9)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000010', 'Abbey Road (1969.9)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000011', 'Let It Be (1970.5)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000011', 'Let It Be (1970.5)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000012', '유재하 <사랑하기 때문에>(1987)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000012', '유재하 <사랑하기 때문에>(1987)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000013', '들국화 <들국화(1집)>(1986)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000013', '들국화 <들국화(1집)>(1986)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000014', '신중현과 엽전들 <신중현과 엽전들>(1974)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000014', '신중현과 엽전들 <신중현과 엽전들>(1974)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000015', '김민기 <김민기(1집)>(1971)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000015', '김민기 <김민기(1집)>(1971)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000016', '산울림 <아니벌써(1집)>(1977)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000016', '산울림 <아니벌써(1집)>(1977)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000017', '어떤날 ＜어떤날 I＞(1986)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000017', '어떤날 ＜어떤날 I＞(1986)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000018', '산울림 <제2집>(1978)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000018', '산울림 <제2집>(1978)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000019', '한대수 <멀고 먼 길(1집)>(1974)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000019', '한대수 <멀고 먼 길(1집)>(1974)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000020', '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000020', '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000021', '이상은 <공무도하가>(1995)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000021', '이상은 <공무도하가>(1995)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000022', '장필순 <나의 외로움이 널 부를 때(5집)>(1997)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000022', '장필순 <나의 외로움이 널 부를 때(5집)>(1997)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000023', '김현철 〈김현철 Vol.1〉(1989)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000023', '김현철 〈김현철 Vol.1〉(1989)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000024', '이문세 <이문세 4>(1987)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000024', '이문세 <이문세 4>(1987)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000025', '시인과 촌장 <푸른 돛(2집)>(1986)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000025', '시인과 촌장 <푸른 돛(2집)>(1986)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000026', '사랑과 평화 <한동안 뜸 했었지(1집)>(1977)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000026', '사랑과 평화 <한동안 뜸 했었지(1집)>(1977)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000027', '김현식 〈김현식 III〉(1986)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000027', '김현식 〈김현식 III〉(1986)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000028', '한영애 <바라본다(2집)>(1988)',  FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000028', '한영애 <바라본다(2집)>(1988)',  'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000029', '델리 스파이스 〈Deli Spice〉(1997)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000029', '델리 스파이스 〈Deli Spice〉(1997)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000030', '듀스 〈Force Deux〉(1995)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000030', '듀스 〈Force Deux〉(1995)', 'N', CURRENT_TIMESTAMP);
 
 INSERT INTO ALBUM (ALBUM_ID, TITLE, DELETED, CREATE_UTC)
-VALUES ('FA200205000031', '어떤날 <어떤날 II>(1989)', FALSE, CURRENT_TIMESTAMP);
+VALUES ('FA200205000031', '어떤날 <어떤날 II>(1989)', 'N', CURRENT_TIMESTAMP);
 
 /* ALB_LOCALE */
 INSERT INTO ALB_LOCALE (ALBUM_KEY, LOCALE_CODE, CREATE_UTC)
@@ -402,7 +402,7 @@ VALUES (
     'Please Please Me (1963.3) song-1',
     224,
     1,
-    FALSE,
+    'N',
     CURRENT_TIMESTAMP
 );
 
@@ -413,7 +413,7 @@ VALUES (
    'Please Please Me (1963.3) song-2',
    454,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -424,7 +424,7 @@ VALUES (
    'Please Please Me (1963.3) song-3',
    455,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -435,7 +435,7 @@ VALUES (
    'Please Please Me (1963.3) song-4',
    299,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -446,7 +446,7 @@ VALUES (
    'Please Please Me (1963.3) song-5',
    142,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -457,7 +457,7 @@ VALUES (
    'Please Please Me (1963.3) song-6',
    367,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -468,7 +468,7 @@ VALUES (
    'Please Please Me (1963.3) song-7',
    438,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -479,7 +479,7 @@ VALUES (
    'Please Please Me (1963.3) song-8',
    439,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -490,7 +490,7 @@ VALUES (
    'Please Please Me (1963.3) song-9',
    313,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -501,7 +501,7 @@ VALUES (
    'Please Please Me (1963.3) song-10',
    369,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -512,7 +512,7 @@ VALUES (
    'Please Please Me (1963.3) song-11',
    190,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -523,7 +523,7 @@ VALUES (
    'With The Beatles (1963.11) song-1',
    114,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -534,7 +534,7 @@ VALUES (
    'With The Beatles (1963.11) song-2',
    494,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -545,7 +545,7 @@ VALUES (
    'With The Beatles (1963.11) song-3',
    227,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -556,7 +556,7 @@ VALUES (
    'With The Beatles (1963.11) song-4',
    391,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -567,7 +567,7 @@ VALUES (
    'With The Beatles (1963.11) song-5',
    105,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -578,7 +578,7 @@ VALUES (
    'With The Beatles (1963.11) song-6',
    298,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -589,7 +589,7 @@ VALUES (
    'With The Beatles (1963.11) song-7',
    361,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -600,7 +600,7 @@ VALUES (
    'With The Beatles (1963.11) song-8',
    134,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -611,7 +611,7 @@ VALUES (
    'With The Beatles (1963.11) song-9',
    106,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -622,7 +622,7 @@ VALUES (
    'With The Beatles (1963.11) song-10',
    480,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -633,7 +633,7 @@ VALUES (
    'With The Beatles (1963.11) song-11',
    361,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -644,7 +644,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-1',
    334,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -655,7 +655,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-2',
    241,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -666,7 +666,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-3',
    351,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -677,7 +677,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-4',
    293,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -688,7 +688,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-5',
    475,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -699,7 +699,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-6',
    158,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -710,7 +710,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-7',
    351,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -721,7 +721,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-8',
    256,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -732,7 +732,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-9',
    188,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -743,7 +743,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-10',
    139,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -754,7 +754,7 @@ VALUES (
    'A Hard Day''s Night (1964.7), Beatles for Sale (1964.12) song-11',
    284,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -765,7 +765,7 @@ VALUES (
    'Help! (1965.8) song-1',
    218,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -776,7 +776,7 @@ VALUES (
    'Help! (1965.8) song-2',
    474,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -787,7 +787,7 @@ VALUES (
    'Help! (1965.8) song-3',
    249,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -798,7 +798,7 @@ VALUES (
    'Help! (1965.8) song-4',
    252,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -809,7 +809,7 @@ VALUES (
    'Help! (1965.8) song-5',
    399,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -820,7 +820,7 @@ VALUES (
    'Help! (1965.8) song-6',
    116,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -831,7 +831,7 @@ VALUES (
    'Help! (1965.8) song-7',
    229,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -842,7 +842,7 @@ VALUES (
    'Help! (1965.8) song-8',
    253,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -853,7 +853,7 @@ VALUES (
    'Help! (1965.8) song-9',
    359,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -864,7 +864,7 @@ VALUES (
    'Help! (1965.8) song-10',
    361,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -875,7 +875,7 @@ VALUES (
    'Help! (1965.8) song-11',
    423,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -886,7 +886,7 @@ VALUES (
    'Rubber Soul (1965.12) song-1',
    166,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -897,7 +897,7 @@ VALUES (
    'Rubber Soul (1965.12) song-2',
    113,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -908,7 +908,7 @@ VALUES (
    'Rubber Soul (1965.12) song-3',
    377,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -919,7 +919,7 @@ VALUES (
    'Rubber Soul (1965.12) song-4',
    271,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -930,7 +930,7 @@ VALUES (
    'Rubber Soul (1965.12) song-5',
    199,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -941,7 +941,7 @@ VALUES (
    'Rubber Soul (1965.12) song-6',
    500,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -952,7 +952,7 @@ VALUES (
    'Rubber Soul (1965.12) song-7',
    466,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -963,7 +963,7 @@ VALUES (
    'Rubber Soul (1965.12) song-8',
    238,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -974,7 +974,7 @@ VALUES (
    'Rubber Soul (1965.12) song-9',
    128,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -985,7 +985,7 @@ VALUES (
    'Rubber Soul (1965.12) song-10',
    250,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -996,7 +996,7 @@ VALUES (
    'Rubber Soul (1965.12) song-11',
    410,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1007,7 +1007,7 @@ VALUES (
    'Revolver (1966.8) song-1',
    237,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1018,7 +1018,7 @@ VALUES (
    'Revolver (1966.8) song-2',
    393,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1029,7 +1029,7 @@ VALUES (
    'Revolver (1966.8) song-3',
    242,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1040,7 +1040,7 @@ VALUES (
    'Revolver (1966.8) song-4',
    403,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1051,7 +1051,7 @@ VALUES (
    'Revolver (1966.8) song-5',
    335,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1062,7 +1062,7 @@ VALUES (
    'Revolver (1966.8) song-6',
    290,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1073,7 +1073,7 @@ VALUES (
    'Revolver (1966.8) song-7',
    377,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1084,7 +1084,7 @@ VALUES (
    'Revolver (1966.8) song-8',
    485,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1095,7 +1095,7 @@ VALUES (
    'Revolver (1966.8) song-9',
    178,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1106,7 +1106,7 @@ VALUES (
    'Revolver (1966.8) song-10',
    399,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1117,7 +1117,7 @@ VALUES (
    'Revolver (1966.8) song-11',
    472,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1128,7 +1128,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-1',
    463,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1139,7 +1139,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-2',
    160,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1150,7 +1150,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-3',
    464,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1161,7 +1161,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-4',
    128,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1172,7 +1172,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-5',
    425,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1183,7 +1183,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-6',
    301,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1194,7 +1194,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-7',
    102,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1205,7 +1205,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-8',
    329,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1216,7 +1216,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-9',
    470,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1227,7 +1227,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-10',
    237,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1238,7 +1238,7 @@ VALUES (
    'Sgt. Pepper''s Lonely Hearts Club Band (1967.6) ,Magical Mystery Tour (1967.11)[2] song-11',
    150,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1249,7 +1249,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-1',
    207,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1260,7 +1260,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-2',
    165,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1271,7 +1271,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-3',
    303,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1282,7 +1282,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-4',
    230,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1293,7 +1293,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-5',
    340,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1304,7 +1304,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-6',
    147,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1315,7 +1315,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-7',
    237,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1326,7 +1326,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-8',
    227,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1337,7 +1337,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-9',
    231,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1348,7 +1348,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-10',
    498,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1359,7 +1359,7 @@ VALUES (
    'The Beatles(aka 화이트 앨범) (1968.11) song-11',
    406,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1370,7 +1370,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-1',
    371,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1381,7 +1381,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-2',
    165,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1392,7 +1392,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-3',
    270,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1403,7 +1403,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-4',
    372,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1414,7 +1414,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-5',
    175,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1425,7 +1425,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-6',
    184,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1436,7 +1436,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-7',
    410,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1447,7 +1447,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-8',
    203,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1458,7 +1458,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-9',
    491,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1469,7 +1469,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-10',
    477,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1480,7 +1480,7 @@ VALUES (
    'Yellow Submarine (1969.1) song-11',
    149,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1491,7 +1491,7 @@ VALUES (
    'Abbey Road (1969.9) song-1',
    107,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1502,7 +1502,7 @@ VALUES (
    'Abbey Road (1969.9) song-2',
    324,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1513,7 +1513,7 @@ VALUES (
    'Abbey Road (1969.9) song-3',
    163,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1524,7 +1524,7 @@ VALUES (
    'Abbey Road (1969.9) song-4',
    281,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1535,7 +1535,7 @@ VALUES (
    'Abbey Road (1969.9) song-5',
    325,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1546,7 +1546,7 @@ VALUES (
    'Abbey Road (1969.9) song-6',
    294,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1557,7 +1557,7 @@ VALUES (
    'Abbey Road (1969.9) song-7',
    475,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1568,7 +1568,7 @@ VALUES (
    'Abbey Road (1969.9) song-8',
    113,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1579,7 +1579,7 @@ VALUES (
    'Abbey Road (1969.9) song-9',
    425,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1590,7 +1590,7 @@ VALUES (
    'Abbey Road (1969.9) song-10',
    477,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1601,7 +1601,7 @@ VALUES (
    'Abbey Road (1969.9) song-11',
    440,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1612,7 +1612,7 @@ VALUES (
    'Let It Be (1970.5) song-1',
    489,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1623,7 +1623,7 @@ VALUES (
    'Let It Be (1970.5) song-2',
    235,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1634,7 +1634,7 @@ VALUES (
    'Let It Be (1970.5) song-3',
    249,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1645,7 +1645,7 @@ VALUES (
    'Let It Be (1970.5) song-4',
    356,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1656,7 +1656,7 @@ VALUES (
    'Let It Be (1970.5) song-5',
    392,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1667,7 +1667,7 @@ VALUES (
    'Let It Be (1970.5) song-6',
    320,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1678,7 +1678,7 @@ VALUES (
    'Let It Be (1970.5) song-7',
    110,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1689,7 +1689,7 @@ VALUES (
    'Let It Be (1970.5) song-8',
    240,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1700,7 +1700,7 @@ VALUES (
    'Let It Be (1970.5) song-9',
    158,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1711,7 +1711,7 @@ VALUES (
    'Let It Be (1970.5) song-10',
    357,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1722,7 +1722,7 @@ VALUES (
    'Let It Be (1970.5) song-11',
    250,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1733,7 +1733,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-1',
    165,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1744,7 +1744,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-2',
    356,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1755,7 +1755,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-3',
    205,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1766,7 +1766,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-4',
    222,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1777,7 +1777,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-5',
    138,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1788,7 +1788,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-6',
    394,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1799,7 +1799,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-7',
    120,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1810,7 +1810,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-8',
    490,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1821,7 +1821,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-9',
    363,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1832,7 +1832,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-10',
    359,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1843,7 +1843,7 @@ VALUES (
    '유재하 <사랑하기 때문에>(1987) song-11',
    430,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1854,7 +1854,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-1',
    253,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1865,7 +1865,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-2',
    184,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1876,7 +1876,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-3',
    391,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1887,7 +1887,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-4',
    452,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1898,7 +1898,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-5',
    175,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1909,7 +1909,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-6',
    425,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1920,7 +1920,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-7',
    489,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1931,7 +1931,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-8',
    172,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1942,7 +1942,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-9',
    233,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1953,7 +1953,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-10',
    278,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1964,7 +1964,7 @@ VALUES (
    '들국화 <들국화(1집)>(1986) song-11',
    485,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1975,7 +1975,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-1',
    388,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1986,7 +1986,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-2',
    243,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -1997,7 +1997,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-3',
    368,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2008,7 +2008,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-4',
    171,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2019,7 +2019,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-5',
    338,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2030,7 +2030,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-6',
    380,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2041,7 +2041,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-7',
    322,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2052,7 +2052,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-8',
    321,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2063,7 +2063,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-9',
    415,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2074,7 +2074,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-10',
    425,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2085,7 +2085,7 @@ VALUES (
    '신중현과 엽전들 <신중현과 엽전들>(1974) song-11',
    276,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2096,7 +2096,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-1',
    226,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2107,7 +2107,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-2',
    237,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2118,7 +2118,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-3',
    353,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2129,7 +2129,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-4',
    430,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2140,7 +2140,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-5',
    247,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2151,7 +2151,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-6',
    183,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2162,7 +2162,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-7',
    497,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2173,7 +2173,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-8',
    324,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2184,7 +2184,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-9',
    312,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2195,7 +2195,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-10',
    146,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2206,7 +2206,7 @@ VALUES (
    '김민기 <김민기(1집)>(1971) song-11',
    495,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2217,7 +2217,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-1',
    200,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2228,7 +2228,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-2',
    461,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2239,7 +2239,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-3',
    107,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2250,7 +2250,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-4',
    361,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2261,7 +2261,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-5',
    166,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2272,7 +2272,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-6',
    198,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2283,7 +2283,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-7',
    282,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2294,7 +2294,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-8',
    167,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2305,7 +2305,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-9',
    119,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2316,7 +2316,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-10',
    305,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2327,7 +2327,7 @@ VALUES (
    '산울림 <아니벌써(1집)>(1977) song-11',
    172,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2338,7 +2338,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-1',
    133,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2349,7 +2349,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-2',
    337,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2360,7 +2360,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-3',
    292,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2371,7 +2371,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-4',
    178,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2382,7 +2382,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-5',
    472,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2393,7 +2393,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-6',
    484,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2404,7 +2404,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-7',
    477,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2415,7 +2415,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-8',
    152,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2426,7 +2426,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-9',
    291,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2437,7 +2437,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-10',
    113,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2448,7 +2448,7 @@ VALUES (
    '어떤날 ＜어떤날 I＞(1986) song-11',
    278,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2459,7 +2459,7 @@ VALUES (
    '산울림 <제2집>(1978) song-1',
    212,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2470,7 +2470,7 @@ VALUES (
    '산울림 <제2집>(1978) song-2',
    483,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2481,7 +2481,7 @@ VALUES (
    '산울림 <제2집>(1978) song-3',
    499,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2492,7 +2492,7 @@ VALUES (
    '산울림 <제2집>(1978) song-4',
    151,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2503,7 +2503,7 @@ VALUES (
    '산울림 <제2집>(1978) song-5',
    358,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2514,7 +2514,7 @@ VALUES (
    '산울림 <제2집>(1978) song-6',
    141,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2525,7 +2525,7 @@ VALUES (
    '산울림 <제2집>(1978) song-7',
    197,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2536,7 +2536,7 @@ VALUES (
    '산울림 <제2집>(1978) song-8',
    444,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2547,7 +2547,7 @@ VALUES (
    '산울림 <제2집>(1978) song-9',
    194,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2558,7 +2558,7 @@ VALUES (
    '산울림 <제2집>(1978) song-10',
    141,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2569,7 +2569,7 @@ VALUES (
    '산울림 <제2집>(1978) song-11',
    118,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2580,7 +2580,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-1',
    188,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2591,7 +2591,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-2',
    100,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2602,7 +2602,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-3',
    299,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2613,7 +2613,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-4',
    373,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2624,7 +2624,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-5',
    344,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2635,7 +2635,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-6',
    131,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2646,7 +2646,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-7',
    131,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2657,7 +2657,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-8',
    441,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2668,7 +2668,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-9',
    370,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2679,7 +2679,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-10',
    154,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2690,7 +2690,7 @@ VALUES (
    '한대수 <멀고 먼 길(1집)>(1974) song-11',
    335,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2701,7 +2701,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-1',
    181,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2712,7 +2712,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-2',
    294,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2723,7 +2723,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-3',
    344,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2734,7 +2734,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-4',
    490,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2745,7 +2745,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-5',
    358,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2756,7 +2756,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-6',
    135,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2767,7 +2767,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-7',
    335,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2778,7 +2778,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-8',
    492,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2789,7 +2789,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-9',
    243,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2800,7 +2800,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-10',
    114,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2811,7 +2811,7 @@ VALUES (
    '넥스트 〈The Return Of N.Ex.T Part 1: The Being〉(1994) song-11',
    177,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2822,7 +2822,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-1',
    462,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2833,7 +2833,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-2',
    296,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2844,7 +2844,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-3',
    423,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2855,7 +2855,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-4',
    354,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2866,7 +2866,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-5',
    429,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2877,7 +2877,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-6',
    172,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2888,7 +2888,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-7',
    326,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2899,7 +2899,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-8',
    228,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2910,7 +2910,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-9',
    168,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2921,7 +2921,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-10',
    482,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2932,7 +2932,7 @@ VALUES (
    '이상은 <공무도하가>(1995) song-11',
    352,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2943,7 +2943,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-1',
    188,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2954,7 +2954,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-2',
    117,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2965,7 +2965,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-3',
    433,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2976,7 +2976,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-4',
    300,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2987,7 +2987,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-5',
    120,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -2998,7 +2998,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-6',
    330,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3009,7 +3009,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-7',
    290,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3020,7 +3020,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-8',
    183,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3031,7 +3031,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-9',
    395,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3042,7 +3042,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-10',
    168,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3053,7 +3053,7 @@ VALUES (
    '장필순 <나의 외로움이 널 부를 때(5집)>(1997) song-11',
    276,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3064,7 +3064,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-1',
    126,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3075,7 +3075,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-2',
    412,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3086,7 +3086,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-3',
    155,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3097,7 +3097,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-4',
    272,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3108,7 +3108,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-5',
    390,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3119,7 +3119,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-6',
    480,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3130,7 +3130,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-7',
    130,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3141,7 +3141,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-8',
    224,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3152,7 +3152,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-9',
    254,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3163,7 +3163,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-10',
    418,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3174,7 +3174,7 @@ VALUES (
    '김현철 〈김현철 Vol.1〉(1989) song-11',
    226,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3185,7 +3185,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-1',
    442,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3196,7 +3196,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-2',
    492,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3207,7 +3207,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-3',
    253,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3218,7 +3218,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-4',
    497,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3229,7 +3229,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-5',
    468,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3240,7 +3240,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-6',
    438,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3251,7 +3251,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-7',
    335,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3262,7 +3262,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-8',
    198,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3273,7 +3273,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-9',
    419,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3284,7 +3284,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-10',
    380,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3295,7 +3295,7 @@ VALUES (
    '이문세 <이문세 4>(1987) song-11',
    486,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3306,7 +3306,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-1',
    402,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3317,7 +3317,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-2',
    407,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3328,7 +3328,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-3',
    210,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3339,7 +3339,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-4',
    331,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3350,7 +3350,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-5',
    188,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3361,7 +3361,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-6',
    480,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3372,7 +3372,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-7',
    204,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3383,7 +3383,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-8',
    321,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3394,7 +3394,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-9',
    120,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3405,7 +3405,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-10',
    198,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3416,7 +3416,7 @@ VALUES (
    '시인과 촌장 <푸른 돛(2집)>(1986) song-11',
    460,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3427,7 +3427,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-1',
    431,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3438,7 +3438,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-2',
    202,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3449,7 +3449,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-3',
    257,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3460,7 +3460,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-4',
    483,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3471,7 +3471,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-5',
    478,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3482,7 +3482,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-6',
    441,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3493,7 +3493,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-7',
    319,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3504,7 +3504,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-8',
    133,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3515,7 +3515,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-9',
    157,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3526,7 +3526,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-10',
    249,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3537,7 +3537,7 @@ VALUES (
    '사랑과 평화 <한동안 뜸 했었지(1집)>(1977) song-11',
    324,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3548,7 +3548,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-1',
    408,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3559,7 +3559,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-2',
    220,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3570,7 +3570,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-3',
    203,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3581,7 +3581,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-4',
    423,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3592,7 +3592,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-5',
    209,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3603,7 +3603,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-6',
    228,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3614,7 +3614,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-7',
    167,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3625,7 +3625,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-8',
    319,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3636,7 +3636,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-9',
    108,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3647,7 +3647,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-10',
    330,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3658,7 +3658,7 @@ VALUES (
    '김현식 〈김현식 III〉(1986) song-11',
    303,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3669,7 +3669,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-1',
    334,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3680,7 +3680,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-2',
    149,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3691,7 +3691,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-3',
    396,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3702,7 +3702,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-4',
    311,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3713,7 +3713,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-5',
    324,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3724,7 +3724,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-6',
    494,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3735,7 +3735,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-7',
    405,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3746,7 +3746,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-8',
    307,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3757,7 +3757,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-9',
    267,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3768,7 +3768,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-10',
    423,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3779,7 +3779,7 @@ VALUES (
    '한영애 <바라본다(2집)>(1988) song-11',
    120,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3790,7 +3790,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-1',
    456,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3801,7 +3801,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-2',
    333,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3812,7 +3812,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-3',
    274,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3823,7 +3823,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-4',
    386,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3834,7 +3834,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-5',
    238,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3845,7 +3845,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-6',
    331,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3856,7 +3856,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-7',
    195,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3867,7 +3867,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-8',
    250,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3878,7 +3878,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-9',
    174,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3889,7 +3889,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-10',
    302,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3900,7 +3900,7 @@ VALUES (
    '델리 스파이스 〈Deli Spice〉(1997) song-11',
    489,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3911,7 +3911,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-1',
    293,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3922,7 +3922,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-2',
    312,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3933,7 +3933,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-3',
    341,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3944,7 +3944,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-4',
    409,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3955,7 +3955,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-5',
    399,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3966,7 +3966,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-6',
    151,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3977,7 +3977,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-7',
    486,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3988,7 +3988,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-8',
    267,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -3999,7 +3999,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-9',
    460,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4010,7 +4010,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-10',
    347,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4021,7 +4021,7 @@ VALUES (
    '듀스 〈Force Deux〉(1995) song-11',
    389,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4032,7 +4032,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-1',
    388,
    1,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4043,7 +4043,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-2',
    126,
    2,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4054,7 +4054,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-3',
    495,
    3,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4065,7 +4065,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-4',
    453,
    4,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4076,7 +4076,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-5',
    166,
    5,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4087,7 +4087,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-6',
    442,
    6,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4098,7 +4098,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-7',
    226,
    7,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4109,7 +4109,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-8',
    142,
    8,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4120,7 +4120,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-9',
    498,
    9,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4131,7 +4131,7 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-10',
    204,
    10,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
 
@@ -4142,6 +4142,6 @@ VALUES (
    '어떤날 <어떤날 II>(1989) song-11',
    308,
    11,
-   FALSE,
+   'N',
    CURRENT_TIMESTAMP
 );
