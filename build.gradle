@@ -50,7 +50,7 @@ dependencies {
     testRuntimeOnly("com.h2database:h2")
 }
 
-def querydslSrcDir = "src/main/generated"
+def querydslSrcDir = "$buildDir/generated/source/annotationProcessor/main/java"
 
 querydsl {
     library = "com.querydsl:querydsl-apt"
@@ -69,9 +69,13 @@ configurations {
 sourceSets {
     main {
         java {
-            srcDirs = ['src/main/java', querydslSrcDir]
+            srcDirs(querydslSrcDir)
         }
     }
+}
+
+tasks.withType(JavaCompile) {
+    options.annotationProcessorGeneratedSourcesDirectory = file("$buildDir/generated/source/annotationProcessor/main/java")
 }
 
 tasks.withType(Test) {
