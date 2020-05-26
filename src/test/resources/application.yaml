@@ -10,5 +10,11 @@ spring:
     hibernate:
       ddl-auto: none
     open-in-view: false
+    properties:
+      org:
+        hibernate:
+          envers:
+            audit_table_suffix: _HISTORY
+            store_data_at_delete: true
   flyway:
     enabled: false
