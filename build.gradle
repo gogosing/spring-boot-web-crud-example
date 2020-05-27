@@ -76,7 +76,7 @@ sourceSets {
 }
 
 tasks.withType(JavaCompile) {
-    options.annotationProcessorGeneratedSourcesDirectory = file("$buildDir/generated/source/annotationProcessor/main/java")
+    options.annotationProcessorGeneratedSourcesDirectory = file(querydslSrcDir)
 }
 
 tasks.withType(Test) {
