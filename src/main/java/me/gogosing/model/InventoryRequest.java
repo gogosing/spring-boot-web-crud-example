@@ -2,6 +2,8 @@ package me.gogosing.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 /**
@@ -13,12 +15,14 @@ public class InventoryRequest {
     /**
      * 적용할 앨범 레코드 대체 식별자 목록.
      */
+    @NotNull
     @JsonProperty(value = "albums")
     private List<String> albums;
 
     /**
      * 적용할 음원 레코드 대체 식별자 목록.
      */
+    @NotNull
     @JsonProperty(value = "songs")
     private List<String> songs;
 

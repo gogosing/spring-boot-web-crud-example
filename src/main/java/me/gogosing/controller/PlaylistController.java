@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -51,7 +53,7 @@ public class PlaylistController {
     @PostMapping("/playlist/{userId}")
     public Map<String, String> postPlaylist(
             @PathVariable("userId") String userId,
-            @RequestBody PlaylistRequest playlistRequest
+            @Valid @RequestBody PlaylistRequest playlistRequest
     ) {
         final String storedId = playlistService
                 .createPlaylist(userId, playlistRequest.getTitle());
@@ -73,7 +75,7 @@ public class PlaylistController {
             Locale locale,
             @PathVariable("userId") String userId,
             @PathVariable("id") String id,
-            @RequestBody InventoryRequest inventoryRequest
+            @Valid @RequestBody InventoryRequest inventoryRequest
     ) {
         playlistInventoryService.addInventory(
                 userId, id, locale.getLanguage().toLowerCase(), inventoryRequest
@@ -113,7 +115,7 @@ public class PlaylistController {
     public void putPlaylist(
             @PathVariable("userId") String userId,
             @PathVariable("id") String id,
-            @RequestBody PlaylistRequest playlistRequest
+            @Valid @RequestBody PlaylistRequest playlistRequest
     ) {
         playlistService.updatePlaylist(userId, id, playlistRequest.getTitle());
     }
@@ -142,7 +144,7 @@ public class PlaylistController {
     public void removeInventory(
             @PathVariable("userId") String userId,
             @PathVariable("id") String id,
-            @RequestBody List<String> inventoryId
+            @NotEmpty @RequestBody List<String> inventoryId
     ) {
         playlistInventoryService.removeInventory(userId, id, inventoryId);
     }

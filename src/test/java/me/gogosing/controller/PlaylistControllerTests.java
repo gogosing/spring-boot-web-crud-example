@@ -41,8 +41,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Created by JinBum Jeong on 2020/02/09.
  */
-@WebMvcTest(PlaylistController.class)
 @ExtendWith(SpringExtension.class)
+@WebMvcTest(controllers = PlaylistController.class)
 public class PlaylistControllerTests {
 
     @Autowired
